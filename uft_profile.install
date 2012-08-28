@@ -1,0 +1,14 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the uft_profile install profile.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Performs actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+

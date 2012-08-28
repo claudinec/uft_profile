@@ -1,0 +1,5 @@
+name = UFT
+description = UFT installation profile.
+version = 0.1
+core = 7.x
+
