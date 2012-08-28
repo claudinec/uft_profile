@@ -30,29 +30,42 @@ projects[drupal][version] = 7
 projects[admin_menu][version] = 3.0-rc3
 projects[admin_menu][type] = "module"
 projects[admin_menu][subdir] = "contrib"
+projects[auto_nodetitle][version = 1.0
+projects[auto_nodetitle][type] = "module"
+projects[auto_nodetitle][subdir] = "contrib"
 
+projects[backup_migrate][version] = 2.4
+projects[backup_migrate][type] = "module"
 projects[backup_migrate][subdir] = "contrib"
 
-projects[context][version] = 3.0-beta2
+projects[computed_field][version] = 1.0-beta1
+projects[computed_field][type] = "module"
+projects[computed_field][subdir] = "contrib"
+projects[conditional_fields][type] = "module"
+projects[conditional_fields][subdir] = "contrib"
+projects[context][version] = 3.0-beta4
 projects[context][type] = "module"
 projects[context][subdir] = "contrib"
-projects[ctools][version] = 1.1
+projects[ctools][version] = 1.2
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 
-projects[date][version] = 2.5
+projects[date][version] = 2.6
 projects[date][type] = "module"
 projects[date][subdir] = "contrib"
-projects[devel][version] = 1.2
+projects[devel][version] = 1.3
 projects[devel][type] = "module"
 projects[devel][subdir] = "contrib"
 projects[diff][version] = 2.0
 projects[diff][type] = "module"
 projects[diff][subdir] = "contrib"
-
 projects[ds][version] = 2.0-beta2
 projects[ds][type] = "module"
 projects[ds][subdir] = "contrib"
+
+projects[extlink][version] = 1.12
+projects[extlink][type] = "module"
+projects[extlink][subdir] = "contrib"
 
 projects[features][version] = 1.0
 projects[features][type] = "module"
@@ -60,7 +73,20 @@ projects[features][subdir] = "contrib"
 projects[field_collection][version] = 1.0-beta4
 projects[field_collection][type] = "module"
 projects[field_collection][subdir] = "contrib"
-projects[field_group][subdir] = "contrib"
+projects[filefield_sources][version] = 1.4
+projects[filefield_sources][type] = "module"
+projects[filefield_sources][subdir] = "contrib"
+
+projects[google_analytics][version] = 1.2
+projects[google_analytics][type] = "module"
+projects[google_analytics][subdir] = "contrib"
+
+projects[imce][version] = 1.5
+projects[imce][type] = "module"
+projects[imce][subdir] = "contrib"
+projects[imce_mkdir][version] = 1.0
+projects[imce_mkdir][type] = "module"
+projects[imce_mkdir][subdir] = "contrib"
 
 projects[libraries][version] = 1.0
 projects[libraries][type] = "module"
@@ -68,15 +94,44 @@ projects[libraries][subdir] = "contrib"
 projects[link][version] = 1.0
 projects[link][type] = "module"
 projects[link][subdir] = "contrib"
+projects[logintoboggan][version] = 1.3
+projects[logintoboggan][type] = "module"
+projects[logintoboggan][subdir] = "contrib"
 
+projects[markdown][version] = 1.0
+projects[markdown][type] = "module"
+projects[markdown][subdir] = "contrib"
+projects[module_filter][version] = 1.7
+projects[module_filter][type] = "module"
 projects[module_filter][subdir] = "contrib"
+
+projects[node_clone][version] = 1.0-rc1
+projects[node_clone][type] = "module"
+projects[node_clone][subdir] = "contrib"
+projects[node_export][version] = 3.0
+projects[node_export][type] = "module"
+projects[node_export][subdir] = "contrib"
+projects[nodequeue][version] = 2.0-beta1
+projects[nodequeue][type] = "module"
+projects[nodequeue][subdir] = "contrib"
+
+projects[print][version] = 1.1
+projects[print][type] = "module"
+projects[print][subdir] = "contrib"
+
+projects[revisioning][version] = 1.4
+projects[revisioning][type] = "module"
+projects[revisioning][subdir] = "contrib"
+
+projects[search404][version] = 1.2
+projects[search404][type] = "module"
+projects[search404][subdir] = "contrib"
 
 projects[themekey][version] = 2.3
 projects[themekey][type] = "module"
 projects[themekey][subdir] = "contrib"
-projects[token][subdir] = "contrib"
 
-projects[views][version] = 3.3
+projects[views][version] = 3.5
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 
