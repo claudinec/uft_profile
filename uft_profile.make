@@ -115,6 +115,9 @@ projects[nodequeue][version] = 2.0-beta1
 projects[nodequeue][type] = "module"
 projects[nodequeue][subdir] = "contrib"
 
+projects[pathauto][version] = 1.2
+projects[pathauto][type] = "module"
+projects[pathauto][subdir] = "contrib"
 projects[print][version] = 1.1
 projects[print][type] = "module"
 projects[print][subdir] = "contrib"
