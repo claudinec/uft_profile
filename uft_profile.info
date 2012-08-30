@@ -3,3 +3,10 @@ description = UFT installation profile.
 version = 0.1
 core = 7.x
 
+; Modules
+dependencies[] = admin_menu
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = strongarm
+dependencies[] = token
+

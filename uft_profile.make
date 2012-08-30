@@ -136,6 +136,9 @@ projects[strongarm][subdir] = "contrib"
 projects[themekey][version] = 2.3
 projects[themekey][type] = "module"
 projects[themekey][subdir] = "contrib"
+projects[token][version] = 1.2
+projects[token][type] = "module"
+projects[token][subdir] = "contrib"
 
 projects[views][version] = 3.5
 projects[views][type] = "module"
@@ -153,7 +156,9 @@ projects[wysiwyg][subdir] = "contrib"
 ; Themes
 ; --------
 
-projects[] = omega
+projects[omega][version] = 3.1
+projects[omega][type] = "theme"
+projects[omega][subdir] = "contrib"
 
 ; Libraries
 ; ---------
