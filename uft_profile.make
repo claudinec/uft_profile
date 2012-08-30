@@ -63,6 +63,9 @@ projects[ds][version] = 2.0-beta2
 projects[ds][type] = "module"
 projects[ds][subdir] = "contrib"
 
+projects[entity][version] = 1.0-rc3
+projects[entity][type] = "module"
+projects[entity][subdir] = "contrib"
 projects[extlink][version] = 1.12
 projects[extlink][type] = "module"
 projects[extlink][subdir] = "contrib"
