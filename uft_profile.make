@@ -129,6 +129,9 @@ projects[revisioning][subdir] = "contrib"
 projects[search404][version] = 1.2
 projects[search404][type] = "module"
 projects[search404][subdir] = "contrib"
+projects[strongarm][version] = 2.0
+projects[strongarm][type] = "module"
+projects[strongarm][subdir] = "contrib"
 
 projects[themekey][version] = 2.3
 projects[themekey][type] = "module"
