@@ -27,9 +27,9 @@ projects[drupal][version] = 7
 ; Modules
 ; --------
 
-projects[admin_menu][version] = 3.0-rc3
-projects[admin_menu][type] = "module"
-projects[admin_menu][subdir] = "contrib"
+projects[admin][version] = 2.0-beta3
+projects[admin][type] = "module"
+projects[admin][subdir] = "contrib"
 projects[auto_nodetitle][version = 1.0
 projects[auto_nodetitle][type] = "module"
 projects[auto_nodetitle][subdir] = "contrib"
