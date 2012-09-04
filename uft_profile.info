@@ -6,6 +6,7 @@ core = 7.x
 ; Modules
 dependencies[] = admin
 dependencies[] = ctools
+dependencies[] = devel
 dependencies[] = features
 dependencies[] = fpa
 dependencies[] = module_filter
