@@ -79,6 +79,9 @@ projects[field_collection][subdir] = "contrib"
 projects[filefield_sources][version] = 1.4
 projects[filefield_sources][type] = "module"
 projects[filefield_sources][subdir] = "contrib"
+projects[fpa][version] = 2.2
+projects[fpa][type] = "module"
+projects[fpa][subdir] = "contrib"
 
 projects[google_analytics][version] = 1.2
 projects[google_analytics][type] = "module"
