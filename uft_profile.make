@@ -38,6 +38,9 @@ projects[backup_migrate][version] = 2.4
 projects[backup_migrate][type] = "module"
 projects[backup_migrate][subdir] = "contrib"
 
+projects[coder][version] = 1.0
+projects[coder][type] = "module"
+projects[coder][subdir] = "contrib"
 projects[computed_field][version] = 1.0-beta1
 projects[computed_field][type] = "module"
 projects[computed_field][subdir] = "contrib"

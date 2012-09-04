@@ -5,6 +5,8 @@ core = 7.x
 
 ; Modules
 dependencies[] = admin
+dependencies[] = coder
+dependencies[] = coder_review
 dependencies[] = ctools
 dependencies[] = devel
 dependencies[] = features
