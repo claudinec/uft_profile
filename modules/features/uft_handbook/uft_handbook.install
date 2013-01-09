@@ -1,0 +1,20 @@
+<?php
+/**
+ * @file
+ * UFT Handbook feature.
+ */
+
+/**
+ * Update handbook feature.
+ */
+function uft_handbook_update_7100() {
+  _uft_handbook_flush_revert();
+}
+
+/**
+ * Helper function: flush caches and revert features.
+ */
+function _uft_handbook_flush_revert() {
+  drupal_flush_all_caches();
+  features_revert(array('uft_handbook'));
+}
