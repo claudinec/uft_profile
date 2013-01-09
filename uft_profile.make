@@ -205,6 +205,10 @@ projects[profile2][subdir] = "contrib"
 projects[profile2][type] = "module"
 projects[profile2][version] = "1.3"
 
+projects[profiler][subdir] = "contrib"
+projects[profiler][type] = "module"
+projects[profiler][version] = "2.0-beta1"
+
 projects[revisioning][subdir] = "contrib"
 projects[revisioning][type] = "module"
 projects[revisioning][version] = "1.4"
