@@ -53,9 +53,6 @@ projects[computed_field][version] = "1.0-beta1"
 
 projects[conditional_fields][subdir] = "contrib"
 projects[conditional_fields][type] = "module"
-projects[conditional_fields][download][type] = "git"
-projects[conditional_fields][download][url] = "http://git.drupal.org/project/conditional_fields.git"
-projects[conditional_fields][download][revision] = "cd29b00"
 
 projects[content_access][subdir] = "contrib"
 projects[content_access][type] = "module"
@@ -255,9 +252,6 @@ projects[views_bulk_operations][version] = "3.1"
 
 projects[views_datasource][subdir] = "contrib"
 projects[views_datasource][type] = "module"
-projects[views_datasource][download][type] = "git"
-projects[views_datasource][download][url] = "http://git.drupal.org/project/views_datasource.git"
-projects[views_datasource][download][revision] = "52e54ac"
 
 projects[views_hacks][subdir] = "contrib"
 projects[views_hacks][type] = "module"
