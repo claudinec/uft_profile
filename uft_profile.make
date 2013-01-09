@@ -102,6 +102,10 @@ projects[feeds][subdir] = "contrib"
 projects[feeds][type] = "module"
 projects[feeds][version] = "2.0-alpha7"
 
+projects[feeds_tamper][subdir] = "contrib"
+projects[feeds_tamper][type] = "module"
+projects[feeds_tamper][version] = "1.0-beta4"
+
 projects[field_collection][subdir] = "contrib"
 projects[field_collection][type] = "module"
 projects[field_collection][version] = "1.0-beta5"
