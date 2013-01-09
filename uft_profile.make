@@ -287,5 +287,5 @@ projects[zen][version] = "5.1"
 ; Libraries
 ; ---------
 
-projects[profiler][type] = libraries
-projects[profiler][version] = "2.0-beta1"
+; projects[profiler][type] = libraries
+; projects[profiler][version] = "2.0-beta1"
