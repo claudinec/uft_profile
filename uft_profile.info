@@ -13,3 +13,10 @@ dependencies[] = module_filter
 dependencies[] = strongarm
 dependencies[] = token
 
+
+
+; Information added by drush on 2013-01-09
+version = "unknown"
+project = "uft_profile"
+datestamp = "1357698339"
+
