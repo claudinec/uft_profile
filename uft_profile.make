@@ -234,6 +234,10 @@ projects[themekey][subdir] = "contrib"
 projects[themekey][type] = "module"
 projects[themekey][version] = "2.3"
 
+projects[token][subdir] = "contrib"
+projects[token][type] = "module"
+projects[token][version] = "1.4"
+
 projects[viewreference][subdir] = "contrib"
 projects[viewreference][type] = "module"
 projects[viewreference][version] = "3.4"

@@ -4,19 +4,10 @@ version = 0.1
 core = 7.x
 
 ; Modules
-dependencies[] = admin
 dependencies[] = ctools
 dependencies[] = devel
 dependencies[] = features
 dependencies[] = fpa
 dependencies[] = module_filter
-dependencies[] = strongarm
 dependencies[] = token
-
-
-
-; Information added by drush on 2013-01-09
-version = "unknown"
-project = "uft_profile"
-datestamp = "1357698339"
 
