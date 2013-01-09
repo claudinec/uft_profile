@@ -51,11 +51,11 @@ projects[computed_field][subdir] = "contrib"
 projects[computed_field][type] = "module"
 projects[computed_field][version] = 1.0-beta1
 
-projects[conditional_fields][subdir] = "contrib"
-projects[conditional_fields][type] = "module"
-projects[conditional_fields][download][type] = "git"
-projects[conditional_fields][download][url] = "http://git.drupal.org/project/conditional_fields.git"
-projects[conditional_fields][download][revision] = "cd29b00"
+; projects[conditional_fields][subdir] = "contrib"
+; projects[conditional_fields][type] = "module"
+; projects[conditional_fields][download][type] = "git"
+; projects[conditional_fields][download][url] = "http://git.drupal.org/project/conditional_fields.git"
+; projects[conditional_fields][download][revision] = "cd29b00"
 
 projects[content_access][subdir] = "contrib"
 projects[content_access][type] = "module"
@@ -274,11 +274,11 @@ projects[omega][subdir] = "contrib"
 projects[omega][type] = "theme"
 projects[omega][version] = 3.1
 
-projects[uft_2012][subdir] = "custom"
-projects[uft_2012][type] = "theme"
-projects[uft_2012][download][type] = "git"
-projects[uft_2012][download][url] = "git@github.com:claudinec/uft_2012.git"
-projects[uft_2012][download][revision] = "e87605a87b9daafb1c6f70bb6873fbdc63cf693a"
+; projects[uft_2012][subdir] = "custom"
+; projects[uft_2012][type] = "theme"
+; projects[uft_2012][download][type] = "git"
+; projects[uft_2012][download][url] = "git@github.com:claudinec/uft_2012.git"
+; projects[uft_2012][download][revision] = "e87605a87b9daafb1c6f70bb6873fbdc63cf693a"
 
 projects[zen][subdir] = "contrib"
 projects[zen][type] = "theme"
