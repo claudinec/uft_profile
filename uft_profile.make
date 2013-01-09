@@ -274,6 +274,12 @@ projects[omega][subdir] = "contrib"
 projects[omega][type] = "theme"
 projects[omega][version] = 3.1
 
+projects[uft_2012][subdir] = "custom"
+projects[uft_2012][type] = "theme"
+projects[uft_2012][download][type] = "git"
+projects[uft_2012][download][url] = "git@github.com:claudinec/uft_2012.git"
+projects[uft_2012][download][revision] = "e87605a87b9daafb1c6f70bb6873fbdc63cf693a"
+
 projects[zen][subdir] = "contrib"
 projects[zen][type] = "theme"
 projects[zen][version] = 5.1
