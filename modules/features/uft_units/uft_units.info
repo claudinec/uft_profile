@@ -37,6 +37,7 @@ features[content][] = "unit-field_ugrad_level"
 features[content][] = "unit-field_unit_rti"
 features[content][] = "unit-field_unit_value"
 features[ctools][] = "context:context:3"
+features[features_api][] = api:1
 features[fieldgroup][] = "unit-group_unit_fields"
 features[fieldgroup][] = "unit-group_unit_level"
 features[node][] = "unit"
