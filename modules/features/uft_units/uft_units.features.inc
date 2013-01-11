@@ -1,20 +1,32 @@
 <?php
+/**
+ * @file
+ * uft_units.features.inc
+ */
 
 /**
- * Implementation of hook_ctools_plugin_api().
+ * Implements hook_ctools_plugin_api().
  */
 function uft_units_ctools_plugin_api() {
   list($module, $api) = func_get_args();
   if ($module == "context" && $api == "context") {
-    return array("version" => 3);
+    return array("version" => "3");
   }
 }
 
 /**
- * Implementation of hook_views_api().
+ * Implements hook_node_info().
  */
-function uft_units_views_api() {
-  return array(
-    'api' => '2',
+function uft_units_node_info() {
+  $items = array(
+    'unit' => array(
+      'name' => t('Unit'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Unit Title'),
+      'help' => '',
+    ),
   );
+  return $items;
 }
