@@ -17,15 +17,12 @@ function uft_units_node_info() {
   $items = array(
     'unit' => array(
       'name' => t('Unit'),
-      'module' => 'features',
       'description' => t('Unit content. '),
       'has_title' => '1',
       'title_label' => t('Unit Title'),
       'has_body' => '1',
       'body_label' => t('Content'),
       'min_word_count' => '0',
-      'help' => t('Unit proposal template 7 June 2010: Approved by Coursework Studies Committee, 27 May 2010.
-'),
     ),
   );
   return $items;
