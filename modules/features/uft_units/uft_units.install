@@ -12,6 +12,20 @@ function uft_units_update_7100() {
 }
 
 /**
+ * Update unit feature.
+ */
+function uft_units_update_7101() {
+  _uft_units_flush_revert();
+}
+
+/**
+ * Update unit feature.
+ */
+function uft_units_update_7102() {
+  _uft_units_flush_revert();
+}
+
+/**
  * Helper function: flush caches and revert features.
  */
 function _uft_units_flush_revert() {

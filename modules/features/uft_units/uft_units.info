@@ -38,7 +38,6 @@ features[ctools][] = "context:context:3"
 features[features_api][] = api:1
 features[fieldgroup][] = "unit-group_unit_fields"
 features[fieldgroup][] = "unit-group_unit_level"
-features[node][] = "unit"
 features[views][] = "timetable_all"
 features[views][] = "view_units"
 features[views_api][] = "api:2"

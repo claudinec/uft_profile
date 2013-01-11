@@ -11,24 +11,6 @@ function uft_units_ctools_plugin_api() {
 }
 
 /**
- * Implementation of hook_node_info().
- */
-function uft_units_node_info() {
-  $items = array(
-    'unit' => array(
-      'name' => t('Unit'),
-      'description' => t('Unit content. '),
-      'has_title' => '1',
-      'title_label' => t('Unit Title'),
-      'has_body' => '1',
-      'body_label' => t('Content'),
-      'min_word_count' => '0',
-    ),
-  );
-  return $items;
-}
-
-/**
  * Implementation of hook_views_api().
  */
 function uft_units_views_api() {
