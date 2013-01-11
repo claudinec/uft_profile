@@ -1395,11 +1395,6 @@ Placement',
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Academic Board Approval');
-  t('Academic Board Chair');
-  t('Action required');
-  t('CWSC Approval');
-  t('CWSC Chair');
   t('Corequisites');
   t('Courses');
   t('Date');
@@ -1408,9 +1403,6 @@ Placement',
   t('Field');
   t('File attachments');
   t('GradDip Field');
-  t('Learning Outcomes');
-  t('Learning Outcomes Assessed');
-  t('Library Impact Statement');
   t('MDiv Field');
   t('MDiv Type of Study');
   t('Mode of Teaching');
@@ -1424,7 +1416,6 @@ Placement',
   t('Undergraduate Level');
   t('Unit Code');
   t('Unit Value');
-  t('Weighting');
 
   return $fields;
 }
