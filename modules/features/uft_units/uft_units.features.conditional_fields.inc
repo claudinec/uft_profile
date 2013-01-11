@@ -34,55 +34,5 @@ $items[] = array (
     804 => '804',
   ),
 );
-$items[] = array (
-  'control_field_name' => 'field_mode',
-  'field_name' => 'field_unit_hours_personal',
-  'type' => 'unit',
-  'trigger_values' => 
-  array (
-    'Semester' => 'Semester',
-    'Online' => 'Online',
-  ),
-);
-$items[] = array (
-  'control_field_name' => 'field_mode',
-  'field_name' => 'field_unit_hours_timetabled',
-  'type' => 'unit',
-  'trigger_values' => 
-  array (
-    'Semester' => 'Semester',
-    'Online' => 'Online',
-  ),
-);
-$items[] = array (
-  'control_field_name' => 'field_mode',
-  'field_name' => 'field_unit_hours_total',
-  'type' => 'unit',
-  'trigger_values' => 
-  array (
-    'Semester' => 'Semester',
-    'Online' => 'Online',
-  ),
-);
-$items[] = array (
-  'control_field_name' => 'field_mode',
-  'field_name' => 'field_unit_hours_week',
-  'type' => 'unit',
-  'trigger_values' => 
-  array (
-    'Semester' => 'Semester',
-    'Online' => 'Online',
-  ),
-);
-$items[] = array (
-  'control_field_name' => 'field_mode',
-  'field_name' => 'field_unit_workload',
-  'type' => 'unit',
-  'trigger_values' => 
-  array (
-    'Intensive' => 'Intensive',
-    'Placement' => 'Placement',
-  ),
-);
 return $items;
 }
