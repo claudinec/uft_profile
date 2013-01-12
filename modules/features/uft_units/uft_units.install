@@ -24,10 +24,18 @@ function uft_units_update_7101() {
 function uft_units_update_7102() {
   _uft_units_flush_revert();
 }
+
 /**
  * Update unit feature.
  */
 function uft_units_update_7103() {
+  _uft_units_flush_revert();
+}
+
+/**
+ * Update unit feature.
+ */
+function uft_units_update_7104() {
   _uft_units_flush_revert();
 }
 
