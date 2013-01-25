@@ -13,7 +13,6 @@ dependencies[] = list
 dependencies[] = menu
 dependencies[] = number
 dependencies[] = options
-features[ctools][] = context:context:3
 features[features_api][] = api:1
 features[field][] = node-course-field_course_description
 features[field][] = node-course-field_course_pathways
