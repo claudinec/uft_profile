@@ -10,7 +10,6 @@ dependencies[] = features
 dependencies[] = file
 dependencies[] = link
 dependencies[] = list
-dependencies[] = menu
 dependencies[] = number
 dependencies[] = options
 features[features_api][] = api:1
