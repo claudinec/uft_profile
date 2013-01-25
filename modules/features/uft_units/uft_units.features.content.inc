@@ -1130,63 +1130,6 @@ Placement',
     ),
   );
 
-  // Exported field: field_uft_code
-  $fields['unit-field_uft_code'] = array(
-    'field_name' => 'field_uft_code',
-    'type_name' => 'unit',
-    'display_settings' => array(
-      'weight' => '-2',
-      'parent' => '',
-      'label' => array(
-        'format' => 'above',
-      ),
-      'teaser' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'token' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-    ),
-    'widget_active' => '1',
-    'type' => 'text',
-    'required' => '0',
-    'multiple' => '0',
-    'module' => 'text',
-    'active' => '1',
-    'initial' => '1',
-    'new_per_click' => '1',
-    'text_processing' => '0',
-    'max_length' => '14',
-    'allowed_values' => '',
-    'allowed_values_php' => '',
-    'widget' => array(
-      'rows' => 5,
-      'size' => '14',
-      'default_value' => array(
-        '0' => array(
-          'value' => '',
-          '_error_element' => 'default_value_widget][field_uft_code][0][value',
-        ),
-      ),
-      'default_value_php' => NULL,
-      'label' => 'Unit Code',
-      'weight' => '-2',
-      'description' => 'Check TAMS to make sure the code is not already in use for an existing unit as the code for each unit must be unique across the MCD (your Registrar or Coursework Coordinator will be able to help you with this).',
-      'type' => 'text_textfield',
-      'module' => 'text',
-    ),
-  );
-
   // Exported field: field_ugrad_level
   $fields['unit-field_ugrad_level'] = array(
     'field_name' => 'field_ugrad_level',

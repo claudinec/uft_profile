@@ -17,47 +17,6 @@ function uft_units_views_default_views() {
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('fields', array(
-    'field_uft_code_value' => array(
-      'label' => 'UFT Code',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'label_type' => 'widget',
-      'format' => 'default',
-      'multiple' => array(
-        'group' => TRUE,
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_reversed' => FALSE,
-      ),
-      'exclude' => 0,
-      'id' => 'field_uft_code_value',
-      'table' => 'node_data_field_uft_code',
-      'field' => 'field_uft_code_value',
-      'override' => array(
-        'button' => 'Override',
-      ),
-      'relationship' => 'none',
-    ),
     'field_pre2013_unit_code_value' => array(
       'label' => 'Pre-2013 Unit Code',
       'alter' => array(
@@ -174,29 +133,7 @@ function uft_units_views_default_views() {
       'relationship' => 'none',
     ),
   ));
-  $handler->override_option('sorts', array(
-    'field_uft_code_value' => array(
-      'order' => 'ASC',
-      'delta' => -1,
-      'id' => 'field_uft_code_value',
-      'table' => 'node_data_field_uft_code',
-      'field' => 'field_uft_code_value',
-      'override' => array(
-        'button' => 'Override',
-      ),
-      'relationship' => 'none',
-    ),
-    'title' => array(
-      'order' => 'ASC',
-      'id' => 'title',
-      'table' => 'node',
-      'field' => 'title',
-      'override' => array(
-        'button' => 'Override',
-      ),
-      'relationship' => 'none',
-    ),
-  ));
+  
   $handler->override_option('arguments', array(
     'field_course_type_ref_nid' => array(
       'id' => 'field_course_type_ref_nid',
@@ -311,15 +248,10 @@ You can also specify a semester and/or mode of teaching (semester, online, or in
     'sticky' => 0,
     'order' => 'asc',
     'columns' => array(
-      'field_uft_code_value' => 'field_uft_code_value',
       'title' => 'title',
       'field_mode_value' => 'field_mode_value',
     ),
     'info' => array(
-      'field_uft_code_value' => array(
-        'sortable' => 0,
-        'separator' => '',
-      ),
       'title' => array(
         'sortable' => 0,
         'separator' => '',
@@ -333,47 +265,6 @@ You can also specify a semester and/or mode of teaching (semester, online, or in
   ));
   $handler = $view->new_display('page', 'BTheol', 'page_1');
   $handler->override_option('fields', array(
-    'field_uft_code_value' => array(
-      'label' => 'UFT Code',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'label_type' => 'widget',
-      'format' => 'default',
-      'multiple' => array(
-        'group' => TRUE,
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_reversed' => FALSE,
-      ),
-      'exclude' => 0,
-      'id' => 'field_uft_code_value',
-      'table' => 'node_data_field_uft_code',
-      'field' => 'field_uft_code_value',
-      'override' => array(
-        'button' => 'Override',
-      ),
-      'relationship' => 'none',
-    ),
     'field_pre2013_unit_code_value' => array(
       'label' => 'Pre-2013 Unit Code',
       'alter' => array(
@@ -687,47 +578,6 @@ You can also specify a semester and/or mode of teaching (semester, online, or in
   ));
   $handler = $view->new_display('page', 'GradDipTheol', 'page_3');
   $handler->override_option('fields', array(
-    'field_uft_code_value' => array(
-      'label' => 'UFT Code',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'label_type' => 'widget',
-      'format' => 'default',
-      'multiple' => array(
-        'group' => TRUE,
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_reversed' => FALSE,
-      ),
-      'exclude' => 0,
-      'id' => 'field_uft_code_value',
-      'table' => 'node_data_field_uft_code',
-      'field' => 'field_uft_code_value',
-      'override' => array(
-        'button' => 'Override',
-      ),
-      'relationship' => 'none',
-    ),
     'field_pre2013_unit_code_value' => array(
       'label' => 'Pre-2013 Unit Code',
       'alter' => array(
@@ -1179,47 +1029,6 @@ A list of [**Postgraduate units offered at all RTIs**](http://www.ytu.edu.au/Uni
   ));
   $handler = $view->new_display('page', 'MDiv', 'page_5');
   $handler->override_option('fields', array(
-    'field_uft_code_value' => array(
-      'label' => 'UFT Code',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'label_type' => 'widget',
-      'format' => 'default',
-      'multiple' => array(
-        'group' => TRUE,
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_reversed' => FALSE,
-      ),
-      'exclude' => 0,
-      'id' => 'field_uft_code_value',
-      'table' => 'node_data_field_uft_code',
-      'field' => 'field_uft_code_value',
-      'override' => array(
-        'button' => 'Override',
-      ),
-      'relationship' => 'none',
-    ),
     'title' => array(
       'label' => 'Title',
       'alter' => array(
@@ -1553,17 +1362,12 @@ You can also specify a semester and/or mode of teaching (semester, online, or in
     'order' => 'asc',
     'summary' => '',
     'columns' => array(
-      'field_uft_code_value' => 'field_uft_code_value',
       'title' => 'title',
       'field_mode_value' => 'field_mode_value',
       'field_mdiv_type_study_nid' => 'field_mdiv_type_study_nid',
       'field_pre2013_unit_code_value' => 'field_pre2013_unit_code_value',
     ),
     'info' => array(
-      'field_uft_code_value' => array(
-        'sortable' => 1,
-        'separator' => '',
-      ),
       'title' => array(
         'sortable' => 1,
         'separator' => '',
@@ -2393,47 +2197,6 @@ You can also specify a semester and/or mode of teaching (semester, online, or in
   ));
   $handler = $view->new_display('page', 'BMin', 'page_11');
   $handler->override_option('fields', array(
-    'field_uft_code_value' => array(
-      'label' => 'UFT Code',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'label_type' => 'widget',
-      'format' => 'default',
-      'multiple' => array(
-        'group' => TRUE,
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_reversed' => FALSE,
-      ),
-      'exclude' => 0,
-      'id' => 'field_uft_code_value',
-      'table' => 'node_data_field_uft_code',
-      'field' => 'field_uft_code_value',
-      'override' => array(
-        'button' => 'Override',
-      ),
-      'relationship' => 'none',
-    ),
     'field_pre2013_unit_code_value' => array(
       'label' => 'Pre-2013 Unit Code',
       'alter' => array(
@@ -2885,47 +2648,6 @@ You can also specify a semester and/or mode of teaching (semester, online, or in
   ));
   $handler = $view->new_display('page', 'Full', 'page_13');
   $handler->override_option('fields', array(
-    'field_uft_code_value' => array(
-      'label' => 'UFT Code',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'label_type' => 'widget',
-      'format' => 'default',
-      'multiple' => array(
-        'group' => TRUE,
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_reversed' => FALSE,
-      ),
-      'exclude' => 0,
-      'id' => 'field_uft_code_value',
-      'table' => 'node_data_field_uft_code',
-      'field' => 'field_uft_code_value',
-      'override' => array(
-        'button' => 'Override',
-      ),
-      'relationship' => 'none',
-    ),
     'field_pre2013_unit_code_value' => array(
       'label' => 'Pre-2013 Unit Code',
       'alter' => array(
@@ -3116,44 +2838,6 @@ You can also specify a semester and/or mode of teaching (semester, online, or in
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('fields', array(
-    'field_uft_code_value' => array(
-      'label' => 'Unit Code',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'label_type' => 'custom',
-      'format' => 'default',
-      'multiple' => array(
-        'group' => TRUE,
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_reversed' => FALSE,
-      ),
-      'exclude' => 0,
-      'id' => 'field_uft_code_value',
-      'table' => 'node_data_field_uft_code',
-      'field' => 'field_uft_code_value',
-      'relationship' => 'none',
-    ),
     'field_pre2013_unit_code_value' => array(
       'label' => 'Pre-2013 Unit Code',
       'alter' => array(
@@ -3318,25 +3002,6 @@ You can also specify a semester and/or mode of teaching (semester, online, or in
       ),
       'relationship' => 'none',
       'reduce_duplicates' => 0,
-    ),
-    'field_uft_code_value' => array(
-      'operator' => 'contains',
-      'value' => '',
-      'group' => '0',
-      'exposed' => TRUE,
-      'expose' => array(
-        'use_operator' => 0,
-        'operator' => 'field_uft_code_value_op',
-        'identifier' => 'field_uft_code_value',
-        'label' => 'Unit Code',
-        'optional' => 1,
-        'remember' => 0,
-      ),
-      'case' => 0,
-      'id' => 'field_uft_code_value',
-      'table' => 'node_data_field_uft_code',
-      'field' => 'field_uft_code_value',
-      'relationship' => 'none',
     ),
     'title' => array(
       'operator' => 'contains',
@@ -3533,15 +3198,10 @@ Please update any or all of the criteria to filter results.
     'sticky' => 0,
     'order' => 'asc',
     'columns' => array(
-      'field_uft_code_value' => 'field_uft_code_value',
       'title' => 'title',
       'field_mode_value' => 'field_mode_value',
     ),
     'info' => array(
-      'field_uft_code_value' => array(
-        'sortable' => 1,
-        'separator' => '',
-      ),
       'title' => array(
         'sortable' => 1,
         'separator' => '',
@@ -3551,7 +3211,6 @@ Please update any or all of the criteria to filter results.
         'separator' => '',
       ),
     ),
-    'default' => 'field_uft_code_value',
   ));
   $handler = $view->new_display('page', 'Page', 'page_1');
   $handler->override_option('path', 'search_units');
