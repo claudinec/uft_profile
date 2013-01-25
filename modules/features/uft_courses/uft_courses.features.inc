@@ -15,7 +15,7 @@ function uft_courses_ctools_plugin_api() {
  */
 function uft_courses_node_info() {
   $items = array(
-    'course_type' => array(
+    'course' => array(
       'name' => t('Course'),
       'module' => 'features',
       'description' => t('Course information.'),
@@ -28,13 +28,4 @@ function uft_courses_node_info() {
     ),
   );
   return $items;
-}
-
-/**
- * Implementation of hook_views_api().
- */
-function uft_courses_views_api() {
-  return array(
-    'api' => '2',
-  );
 }
