@@ -7,9 +7,9 @@ function uft_courses_content_default_fields() {
   $fields = array();
 
   // Exported field: field_course_description
-  $fields['course_type-field_course_description'] = array(
+  $fields['course-field_course_description'] = array(
     'field_name' => 'field_course_description',
-    'type_name' => 'course_type',
+    'type_name' => 'course',
     'display_settings' => array(
       'weight' => '-3',
       'parent' => '',
@@ -71,9 +71,9 @@ function uft_courses_content_default_fields() {
   );
 
   // Exported field: field_course_pathways
-  $fields['course_type-field_course_pathways'] = array(
+  $fields['course-field_course_pathways'] = array(
     'field_name' => 'field_course_pathways',
-    'type_name' => 'course_type',
+    'type_name' => 'course',
     'display_settings' => array(
       'weight' => '-1',
       'parent' => '',
@@ -135,9 +135,9 @@ function uft_courses_content_default_fields() {
   );
 
   // Exported field: field_course_structure
-  $fields['course_type-field_course_structure'] = array(
+  $fields['course-field_course_structure'] = array(
     'field_name' => 'field_course_structure',
-    'type_name' => 'course_type',
+    'type_name' => 'course',
     'display_settings' => array(
       'weight' => '3',
       'parent' => '',
@@ -203,10 +203,10 @@ function uft_courses_content_default_fields() {
     ),
   );
 
-  // Exported field: field_course_type
-  $fields['course_type-field_course_type'] = array(
-    'field_name' => 'field_course_type',
-    'type_name' => 'course_type',
+  // Exported field: field_course
+  $fields['course-field_course'] = array(
+    'field_name' => 'field_course',
+    'type_name' => 'course',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -273,9 +273,9 @@ function uft_courses_content_default_fields() {
   );
 
   // Exported field: field_course_volume
-  $fields['course_type-field_course_volume'] = array(
+  $fields['course-field_course_volume'] = array(
     'field_name' => 'field_course_volume',
-    'type_name' => 'course_type',
+    'type_name' => 'course',
     'display_settings' => array(
       'weight' => '1',
       'parent' => '',
@@ -342,9 +342,9 @@ function uft_courses_content_default_fields() {
   );
 
   // Exported field: field_entryreqs
-  $fields['course_type-field_entryreqs'] = array(
+  $fields['course-field_entryreqs'] = array(
     'field_name' => 'field_entryreqs',
-    'type_name' => 'course_type',
+    'type_name' => 'course',
     'display_settings' => array(
       'weight' => '-2',
       'parent' => '',
@@ -411,9 +411,9 @@ function uft_courses_content_default_fields() {
   );
 
   // Exported field: field_files
-  $fields['course_type-field_files'] = array(
+  $fields['course-field_files'] = array(
     'field_name' => 'field_files',
-    'type_name' => 'course_type',
+    'type_name' => 'course',
     'display_settings' => array(
       'label' => array(
         'format' => 'above',
@@ -484,9 +484,9 @@ function uft_courses_content_default_fields() {
   );
 
   // Exported field: field_grad_outcomes
-  $fields['course_type-field_grad_outcomes'] = array(
+  $fields['course-field_grad_outcomes'] = array(
     'field_name' => 'field_grad_outcomes',
-    'type_name' => 'course_type',
+    'type_name' => 'course',
     'display_settings' => array(
       'weight' => 0,
       'parent' => '',
@@ -553,9 +553,9 @@ function uft_courses_content_default_fields() {
   );
 
   // Exported field: field_mcd_link
-  $fields['course_type-field_mcd_link'] = array(
+  $fields['course-field_mcd_link'] = array(
     'field_name' => 'field_mcd_link',
-    'type_name' => 'course_type',
+    'type_name' => 'course',
     'display_settings' => array(
       'weight' => '5',
       'parent' => '',
@@ -630,9 +630,9 @@ function uft_courses_content_default_fields() {
   );
 
   // Exported field: field_mode_text
-  $fields['course_type-field_mode_text'] = array(
+  $fields['course-field_mode_text'] = array(
     'field_name' => 'field_mode_text',
-    'type_name' => 'course_type',
+    'type_name' => 'course',
     'display_settings' => array(
       'weight' => '2',
       'parent' => '',
@@ -699,9 +699,9 @@ function uft_courses_content_default_fields() {
   );
 
   // Exported field: field_timetable_link
-  $fields['course_type-field_timetable_link'] = array(
+  $fields['course-field_timetable_link'] = array(
     'field_name' => 'field_timetable_link',
-    'type_name' => 'course_type',
+    'type_name' => 'course',
     'display_settings' => array(
       'weight' => '4',
       'parent' => '',
