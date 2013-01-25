@@ -12,6 +12,7 @@ dependencies[] = features
 dependencies[] = field_collection
 dependencies[] = file
 dependencies[] = filefield_sources
+dependencies[] = list
 dependencies[] = number
 dependencies[] = options
 dependencies[] = revisioning
