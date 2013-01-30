@@ -441,6 +441,71 @@ function uft_units_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-unit-field_unit_field'.
+  $fields['node-unit-field_unit_field'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '2',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_unit_field',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          1 => 'Field A Humanities',
+          2 => 'Field B Biblical Studies',
+          3 => 'Field C Christian Thought and History',
+          4 => 'Field D Theology: Mission and Ministry',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'list_integer',
+    ),
+    'field_instance' => array(
+      'bundle' => 'unit',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => 7,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_unit_field',
+      'label' => 'Unit Field',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '3',
+      ),
+    ),
+  );
+
   // Exported field: 'node-unit-field_unit_value'.
   $fields['node-unit-field_unit_value'] = array(
     'field_config' => array(
@@ -517,6 +582,7 @@ function uft_units_field_default_fields() {
   t('RTI');
   t('Unit Code');
   t('Unit Content');
+  t('Unit Field');
   t('Unit Value');
 
   return $fields;

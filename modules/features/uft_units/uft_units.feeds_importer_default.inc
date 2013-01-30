@@ -18,11 +18,10 @@ function uft_units_feeds_importer_default() {
     'name' => 'Units',
     'description' => 'Units from 2012 site',
     'fetcher' => array(
-      'plugin_key' => 'FeedsHTTPFetcher',
+      'plugin_key' => 'FeedsFileFetcher',
       'config' => array(
-        'auto_detect_feeds' => FALSE,
-        'use_pubsubhubbub' => FALSE,
-        'designated_hub' => '',
+        'allowed_extensions' => 'txt csv tsv xml opml',
+        'direct' => FALSE,
       ),
     ),
     'parser' => array(
@@ -73,10 +72,10 @@ function uft_units_feeds_importer_default() {
     ),
     'content_type' => '',
     'update' => 0,
-    'import_period' => '1800',
+    'import_period' => '-1',
     'expire_period' => 3600,
     'import_on_create' => 1,
-    'process_in_background' => 1,
+    'process_in_background' => 0,
   );
   $export['units'] = $feeds_importer;
 
