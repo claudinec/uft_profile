@@ -1,0 +1,13 @@
+name = UFT text
+description = Text format and WYSIWYG
+core = 7.x
+package = UFT
+version = 7.x-0.2
+project = uft_text
+dependencies[] = features
+dependencies[] = markdown
+dependencies[] = wysiwyg
+features[features_api][] = api:1
+features[filter][] = html
+features[filter][] = plain_text
+features[wysiwyg][] = html
