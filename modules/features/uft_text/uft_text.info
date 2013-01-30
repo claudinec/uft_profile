@@ -1,4 +1,4 @@
-name = UFT text
+name = UFT Text
 description = Text format and WYSIWYG
 core = 7.x
 package = UFT

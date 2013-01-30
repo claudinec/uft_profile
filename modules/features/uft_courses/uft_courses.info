@@ -23,3 +23,4 @@ features[field][] = node-course-field_entry_requirements
 features[field][] = node-course-field_file_attachments
 features[field][] = node-course-field_graduate_outcomes
 features[field][] = node-course-field_modes_of_study
+features[node][] = course

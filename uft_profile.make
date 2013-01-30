@@ -230,6 +230,10 @@ projects[stringoverrides][subdir] = "contrib"
 projects[stringoverrides][type] = "module"
 projects[stringoverrides][version] = "1.8"
 
+projects[strongarm][subdir] = "contrib"
+projects[strongarm][type] = "module"
+projects[strongarm][version] = "2.0"
+
 projects[switchtheme][subdir] = "contrib"
 projects[switchtheme][type] = "module"
 projects[switchtheme][version] = "1.0"
