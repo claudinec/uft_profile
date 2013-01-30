@@ -31,6 +31,9 @@ function uft_units_ctools_plugin_api() {
  */
 function uft_units_views_api() {
   return array("version" => "3.0");
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => "1");
+  }
 }
 
 /**
