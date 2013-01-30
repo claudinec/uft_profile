@@ -55,17 +55,87 @@ function uft_units_feeds_importer_default() {
             'unique' => FALSE,
           ),
           3 => array(
+            'source' => 'Path',
+            'target' => 'path_alias',
+            'pathauto_override' => 1,
+          ),
+          4 => array(
             'source' => 'Unit Code',
             'target' => 'field_unit_code',
             'unique' => FALSE,
           ),
-          4 => array(
+          5 => array(
+            'source' => 'BTheol Field',
+            'target' => 'field_unit_field',
+            'unique' => FALSE,
+          ),
+          6 => array(
+            'source' => 'Corequisites',
+            'target' => 'field_corequisites',
+            'unique' => FALSE,
+          ),
+          7 => array(
+            'source' => 'Department Name',
+            'target' => 'field_department',
+            'unique' => FALSE,
+          ),
+          8 => array(
+            'source' => 'Disciplines',
+            'target' => 'field_discipline',
+            'unique' => FALSE,
+          ),
+          9 => array(
+            'source' => 'GradDip Field',
+            'target' => 'field_postgraduate_level',
+            'unique' => FALSE,
+          ),
+          10 => array(
+            'source' => 'Learning Outcomes',
+            'target' => 'field_learning_outcomes',
+            'unique' => FALSE,
+          ),
+          11 => array(
+            'source' => 'MDiv Type of Study',
+            'target' => 'field_mdiv_type_of_study',
+            'unique' => FALSE,
+          ),
+          12 => array(
+            'source' => 'Mode of Teaching',
+            'target' => 'field_mode_of_teaching',
+            'unique' => FALSE,
+          ),
+          13 => array(
             'source' => 'Pre-2013 Unit Code',
             'target' => 'field_pre_2013_unit_code',
             'unique' => FALSE,
           ),
+          14 => array(
+            'source' => 'Prerequisites',
+            'target' => 'field_prerequisites',
+            'unique' => FALSE,
+          ),
+          15 => array(
+            'source' => 'Prohibited Combinations',
+            'target' => 'field_prohibited_combinations',
+            'unique' => FALSE,
+          ),
+          16 => array(
+            'source' => 'RTI',
+            'target' => 'field_rti',
+            'unique' => FALSE,
+          ),
+          17 => array(
+            'source' => 'Teaching Methods',
+            'target' => 'field_teaching_methods',
+            'unique' => FALSE,
+          ),
+          18 => array(
+            'source' => 'Undergraduate Level',
+            'target' => 'field_undergraduate_level',
+            'unique' => FALSE,
+          ),
         ),
-        'update_existing' => '1',
+        'update_existing' => '2',
         'input_format' => 'html',
         'skip_hash_check' => 0,
       ),

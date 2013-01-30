@@ -369,7 +369,7 @@ function uft_units_field_default_fields() {
       'label' => 'Learning Outcomes',
       'required' => 1,
       'settings' => array(
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -874,11 +874,9 @@ function uft_units_field_default_fields() {
       ),
       'locked' => '0',
       'module' => 'text',
-      'settings' => array(
-        'max_length' => '255',
-      ),
+      'settings' => array(),
       'translatable' => '0',
-      'type' => 'text',
+      'type' => 'text_long',
     ),
     'field_instance' => array(
       'bundle' => 'unit',
@@ -891,7 +889,7 @@ function uft_units_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 17,
+          'weight' => 19,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -903,23 +901,17 @@ function uft_units_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_teaching_methods',
       'label' => 'Teaching Methods',
-      'required' => 0,
+      'required' => FALSE,
       'settings' => array(
-        'text_processing' => '0',
+        'text_processing' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
-        'active' => 1,
-        'module' => 'autocomplete_widgets',
+        'module' => 'text',
         'settings' => array(
-          'autocomplete_case' => '1',
-          'autocomplete_match' => 'contains',
-          'autocomplete_xss' => '0',
-          'i18n_flddata' => 0,
-          'size' => '60',
-          'suggested_values' => '',
+          'rows' => 5,
         ),
-        'type' => 'autocomplete_widgets_suggested',
+        'type' => 'text_textarea',
         'weight' => '19',
       ),
     ),
