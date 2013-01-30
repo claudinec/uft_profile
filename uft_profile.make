@@ -33,7 +33,11 @@ projects[admin_menu][version] = "3.0-rc3"
 
 projects[auto_nodetitle][subdir] = "contrib"
 projects[auto_nodetitle][type] = "module"
-projects[auto_nodetitle][version = 1.0
+projects[auto_nodetitle][version = "1.0"
+
+projects[autocomplete_widgets][subdir] = "contrib"
+projects[autocomplete_widgets][type] = "module"
+projects[autocomplete_widgets][version = "1.0-beta2"
 
 projects[backup_migrate][subdir] = "contrib"
 projects[backup_migrate][type] = "module"
