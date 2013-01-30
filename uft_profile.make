@@ -272,6 +272,7 @@ projects[webform][version] = "3.18"
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][type] = "module"
 projects[wysiwyg][version] = "2.2"
+projects[wysiwyg][patch][] = "http://drupal.org/files/wysiwyg-support_v4_ckeditor-1853550-73.patch"
 
 projects[xmlsitemap][subdir] = "contrib"
 projects[xmlsitemap][type] = "module"
@@ -289,7 +290,7 @@ projects[omega][version] = "3.1"
 
 libraries[ckeditor][type] = "libraries"
 libraries[ckeditor][download][type] = "file"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.0/ckeditor_4.0_standard.tar.gz"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.0/ckeditor_4.0_full.tar.gz"
 
 libraries[profiler][type] = "libraries"
 libraries[profiler][download][type] = "get"
