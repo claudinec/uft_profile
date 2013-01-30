@@ -10,6 +10,7 @@ dependencies[] = ctools
 dependencies[] = date
 dependencies[] = features
 dependencies[] = field_collection
+dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = filefield_sources
 dependencies[] = list
