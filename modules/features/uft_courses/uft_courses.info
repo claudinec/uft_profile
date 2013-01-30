@@ -7,6 +7,7 @@ version = 7.x-1.0
 project = uft_courses
 dependencies[] = ctools
 dependencies[] = features
+dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = link
 dependencies[] = list
