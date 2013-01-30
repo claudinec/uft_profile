@@ -269,6 +269,10 @@ projects[webform][subdir] = "contrib"
 projects[webform][type] = "module"
 projects[webform][version] = "3.18"
 
+projects[wysiwyg][subdir] = "contrib"
+projects[wysiwyg][type] = "module"
+projects[wysiwyg][version] = "2.2"
+
 projects[xmlsitemap][subdir] = "contrib"
 projects[xmlsitemap][type] = "module"
 projects[xmlsitemap][version] = "2.0-rc2"
@@ -283,6 +287,11 @@ projects[omega][version] = "3.1"
 ; Libraries
 ; ---------
 
-projects[profiler][type] = libraries
-projects[profiler][version] = "2.0-beta1"
+libraries[ckeditor][type] = "libraries"
+libraries[ckeditor][download][type] = "file"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.0/ckeditor_4.0_standard.tar.gz"
+
+libraries[profiler][type] = "libraries"
+libraries[profiler][download][type] = "get"
+libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profiler-7.x-2.0-beta1.tar.gz"
 
