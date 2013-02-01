@@ -29,11 +29,15 @@ projects[drupal][version] = 7
 
 projects[admin_menu][subdir] = "contrib"
 projects[admin_menu][type] = "module"
-projects[admin_menu][version] = "3.0-rc3"
+projects[admin_menu][version] = "3.0-rc4"
 
 projects[auto_nodetitle][subdir] = "contrib"
 projects[auto_nodetitle][type] = "module"
-projects[auto_nodetitle][version = 1.0
+projects[auto_nodetitle][version = "1.0"
+
+projects[autocomplete_widgets][subdir] = "contrib"
+projects[autocomplete_widgets][type] = "module"
+projects[autocomplete_widgets][version = "1.0-beta2"
 
 projects[backup_migrate][subdir] = "contrib"
 projects[backup_migrate][type] = "module"
@@ -89,6 +93,10 @@ projects[ds][version] = "2.0"
 projects[entity][subdir] = "contrib"
 projects[entity][type] = "module"
 projects[entity][version] = "1.0"
+
+projects[entityreference][subdir] = "contrib"
+projects[entityreference][type] = "module"
+projects[entityreference][version] = "1.0"
 
 projects[extlink][subdir] = "contrib"
 projects[extlink][type] = "module"
@@ -230,6 +238,10 @@ projects[stringoverrides][subdir] = "contrib"
 projects[stringoverrides][type] = "module"
 projects[stringoverrides][version] = "1.8"
 
+projects[strongarm][subdir] = "contrib"
+projects[strongarm][type] = "module"
+projects[strongarm][version] = "2.0"
+
 projects[switchtheme][subdir] = "contrib"
 projects[switchtheme][type] = "module"
 projects[switchtheme][version] = "1.0"
@@ -269,6 +281,11 @@ projects[webform][subdir] = "contrib"
 projects[webform][type] = "module"
 projects[webform][version] = "3.18"
 
+projects[wysiwyg][subdir] = "contrib"
+projects[wysiwyg][type] = "module"
+projects[wysiwyg][version] = "2.2"
+projects[wysiwyg][patch][] = "http://drupal.org/files/wysiwyg-support_v4_ckeditor-1853550-73.patch"
+
 projects[xmlsitemap][subdir] = "contrib"
 projects[xmlsitemap][type] = "module"
 projects[xmlsitemap][version] = "2.0-rc2"
@@ -283,6 +300,11 @@ projects[omega][version] = "3.1"
 ; Libraries
 ; ---------
 
-projects[profiler][type] = libraries
-projects[profiler][version] = "2.0-beta1"
+libraries[ckeditor][type] = "libraries"
+libraries[ckeditor][download][type] = "file"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.0/ckeditor_4.0_full.tar.gz"
+
+libraries[profiler][type] = "libraries"
+libraries[profiler][download][type] = "get"
+libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profiler-7.x-2.0-beta1.tar.gz"
 

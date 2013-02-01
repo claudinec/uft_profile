@@ -20,3 +20,6 @@ libraries
 modules/contrib
 themes/contrib
 
+*.~
+*.swp
+
