@@ -134,6 +134,11 @@ function uft_units_feeds_importer_default() {
             'target' => 'field_undergraduate_level',
             'unique' => FALSE,
           ),
+          19 => array(
+            'source' => 'Course Type',
+            'target' => 'field_courses',
+            'unique' => FALSE,
+          ),
         ),
         'update_existing' => '2',
         'input_format' => 'html',
