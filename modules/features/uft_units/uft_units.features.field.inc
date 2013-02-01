@@ -10,6 +10,185 @@
 function uft_units_field_default_fields() {
   $fields = array();
 
+  // Exported field: 'field_collection_item-field_timetable-field_day'.
+  $fields['field_collection_item-field_timetable-field_day'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_day',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          1 => 'Monday',
+          2 => 'Tuesday',
+          3 => 'Wednesday',
+          4 => 'Thursday',
+          5 => 'Friday',
+          6 => 'Saturday',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'list_integer',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_timetable',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => '2',
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_day',
+      'label' => 'Day',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '3',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_timetable-field_semester'.
+  $fields['field_collection_item-field_timetable-field_semester'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_semester',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => 'Year-long',
+          1 => 'Semester 1',
+          2 => 'Semester 2',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'list_integer',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_timetable',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => '1',
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_semester',
+      'label' => 'Semester',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '2',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_timetable-field_timetable_year'.
+  $fields['field_collection_item-field_timetable-field_timetable_year'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_timetable_year',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'number_integer',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_timetable',
+      'default_value' => array(
+        0 => array(
+          'value' => '2013',
+        ),
+      ),
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => 1,
+            'scale' => 0,
+            'thousand_separator' => '',
+          ),
+          'type' => 'number_integer',
+          'weight' => '0',
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_timetable_year',
+      'label' => 'Timetable Year',
+      'required' => 1,
+      'settings' => array(
+        'max' => '2017',
+        'min' => '2013',
+        'prefix' => '',
+        'suffix' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '1',
+      ),
+    ),
+  );
+
   // Exported field: 'node-unit-field_corequisites'.
   $fields['node-unit-field_corequisites'] = array(
     'field_config' => array(
@@ -101,13 +280,17 @@ function uft_units_field_default_fields() {
       'locked' => '0',
       'module' => 'entityreference',
       'settings' => array(
-        'handler' => 'base',
+        'handler' => 'views',
         'handler_settings' => array(
-          'sort' => array(
-            'type' => 'none',
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
           ),
-          'target_bundles' => array(
-            'course' => 'course',
+          'view' => array(
+            'args' => array(),
+            'display_name' => 'entityreference_1',
+            'view_name' => 'courses',
           ),
         ),
         'target_type' => 'node',
@@ -994,6 +1177,68 @@ function uft_units_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-unit-field_timetable'.
+  $fields['node-unit-field_timetable'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_timetable',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'field_collection',
+      'settings' => array(
+        'hide_blank_items' => 1,
+        'path' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'field_collection',
+    ),
+    'field_instance' => array(
+      'bundle' => 'unit',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'field_collection',
+          'settings' => array(
+            'add' => 'Add',
+            'delete' => 'Delete',
+            'description' => TRUE,
+            'edit' => 'Edit',
+            'view_mode' => 'full',
+          ),
+          'type' => 'field_collection_view',
+          'weight' => 21,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_timetable',
+      'label' => 'Timetable',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'field_collection',
+        'settings' => array(),
+        'type' => 'field_collection_embed',
+        'weight' => '21',
+      ),
+    ),
+  );
+
   // Exported field: 'node-unit-field_undergraduate_level'.
   $fields['node-unit-field_undergraduate_level'] = array(
     'field_config' => array(
@@ -1329,6 +1574,7 @@ function uft_units_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Corequisites');
   t('Courses');
+  t('Day');
   t('Department');
   t('Discipline');
   t('File attachments');
@@ -1340,7 +1586,10 @@ function uft_units_field_default_fields() {
   t('Prerequisites');
   t('Prohibited Combinations');
   t('RTI');
+  t('Semester');
   t('Teaching Methods');
+  t('Timetable');
+  t('Timetable Year');
   t('Undergraduate Level');
   t('Unit Code');
   t('Unit Content');

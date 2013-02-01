@@ -118,6 +118,10 @@ projects[field_collection][subdir] = "contrib"
 projects[field_collection][type] = "module"
 projects[field_collection][version] = "1.0-beta5"
 
+projects[field_collection_feeds][subdir] = "contrib"
+projects[field_collection_feeds][type] = "module"
+projects[field_collection_feeds][version] = "1.0-alpha2"
+
 projects[filefield_sources][subdir] = "contrib"
 projects[filefield_sources][type] = "module"
 projects[filefield_sources][version] = "1.7"
