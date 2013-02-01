@@ -51,5 +51,12 @@ function uft_courses_strongarm() {
   $strongarm->value = 0;
   $export['node_submitted_course'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_course_pattern';
+  $strongarm->value = 'course/[node:title]';
+  $export['pathauto_node_course_pattern'] = $strongarm;
+
   return $export;
 }
