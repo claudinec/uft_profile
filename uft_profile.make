@@ -94,6 +94,10 @@ projects[entity][subdir] = "contrib"
 projects[entity][type] = "module"
 projects[entity][version] = "1.0"
 
+projects[entityreference][subdir] = "contrib"
+projects[entityreference][type] = "module"
+projects[entityreference][version] = "1.0"
+
 projects[extlink][subdir] = "contrib"
 projects[extlink][type] = "module"
 projects[extlink][version] = "1.12"

@@ -77,6 +77,83 @@ function uft_units_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-unit-field_courses'.
+  $fields['node-unit-field_courses'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '6',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_courses',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'course' => 'course',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => '0',
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'unit',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 20,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_courses',
+      'label' => 'Courses',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => '6',
+      ),
+    ),
+  );
+
   // Exported field: 'node-unit-field_department'.
   $fields['node-unit-field_department'] = array(
     'field_config' => array(
@@ -312,7 +389,7 @@ function uft_units_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'file_generic',
-        'weight' => '8',
+        'weight' => '20',
       ),
     ),
   );
@@ -379,7 +456,7 @@ function uft_units_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '7',
+        'weight' => '8',
       ),
     ),
   );
@@ -1110,7 +1187,7 @@ function uft_units_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '6',
+        'weight' => '7',
       ),
     ),
   );
@@ -1251,6 +1328,7 @@ function uft_units_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Corequisites');
+  t('Courses');
   t('Department');
   t('Discipline');
   t('File attachments');

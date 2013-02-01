@@ -9,7 +9,24 @@
  */
 function uft_courses_ctools_plugin_api() {
   list($module, $api) = func_get_args();
-  if ($module == "context" && $api == "context") {
-    return array("version" => "3");
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => "1");
   }
+}
+
+/**
+ * Implements hook_node_info().
+ */
+function uft_courses_node_info() {
+  $items = array(
+    'course' => array(
+      'name' => t('Course'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
+  );
+  return $items;
 }
