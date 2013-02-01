@@ -16,6 +16,7 @@ dependencies[] = field_collection
 dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = filefield_sources
+dependencies[] = job_scheduler
 dependencies[] = list
 dependencies[] = number
 dependencies[] = options
