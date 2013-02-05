@@ -28,6 +28,8 @@ function uft_units_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
+  $handler->display->display_options['exposed_form']['options']['autosubmit'] = TRUE;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'table';
@@ -127,6 +129,60 @@ function uft_units_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'unit' => 'unit',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Courses (field_courses) */
+  $handler->display->display_options['filters']['field_courses_target_id']['id'] = 'field_courses_target_id';
+  $handler->display->display_options['filters']['field_courses_target_id']['table'] = 'field_data_field_courses';
+  $handler->display->display_options['filters']['field_courses_target_id']['field'] = 'field_courses_target_id';
+  $handler->display->display_options['filters']['field_courses_target_id']['group'] = 1;
+  $handler->display->display_options['filters']['field_courses_target_id']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_courses_target_id']['expose']['operator_id'] = 'field_courses_target_id_op';
+  $handler->display->display_options['filters']['field_courses_target_id']['expose']['label'] = 'Courses';
+  $handler->display->display_options['filters']['field_courses_target_id']['expose']['operator'] = 'field_courses_target_id_op';
+  $handler->display->display_options['filters']['field_courses_target_id']['expose']['identifier'] = 'field_courses_target_id';
+  $handler->display->display_options['filters']['field_courses_target_id']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+  );
+  $handler->display->display_options['filters']['field_courses_target_id']['group_info']['label'] = 'Courses (field_courses)';
+  $handler->display->display_options['filters']['field_courses_target_id']['group_info']['identifier'] = 'field_courses_target_id';
+  $handler->display->display_options['filters']['field_courses_target_id']['group_info']['remember'] = FALSE;
+  $handler->display->display_options['filters']['field_courses_target_id']['group_info']['group_items'] = array(
+    1 => array(),
+    2 => array(),
+    3 => array(),
+  );
+  /* Filter criterion: Field collection item: Timetable Year (field_timetable_year) */
+  $handler->display->display_options['filters']['field_timetable_year_value']['id'] = 'field_timetable_year_value';
+  $handler->display->display_options['filters']['field_timetable_year_value']['table'] = 'field_data_field_timetable_year';
+  $handler->display->display_options['filters']['field_timetable_year_value']['field'] = 'field_timetable_year_value';
+  $handler->display->display_options['filters']['field_timetable_year_value']['relationship'] = 'field_timetable_value';
+  $handler->display->display_options['filters']['field_timetable_year_value']['value']['value'] = '2013';
+  $handler->display->display_options['filters']['field_timetable_year_value']['group'] = 1;
+  $handler->display->display_options['filters']['field_timetable_year_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_timetable_year_value']['expose']['operator_id'] = 'field_timetable_year_value_op';
+  $handler->display->display_options['filters']['field_timetable_year_value']['expose']['label'] = 'Timetable Year';
+  $handler->display->display_options['filters']['field_timetable_year_value']['expose']['operator'] = 'field_timetable_year_value_op';
+  $handler->display->display_options['filters']['field_timetable_year_value']['expose']['identifier'] = 'field_timetable_year_value';
+  $handler->display->display_options['filters']['field_timetable_year_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+  );
+  /* Filter criterion: Field collection item: Semester (field_semester) */
+  $handler->display->display_options['filters']['field_semester_value']['id'] = 'field_semester_value';
+  $handler->display->display_options['filters']['field_semester_value']['table'] = 'field_data_field_semester';
+  $handler->display->display_options['filters']['field_semester_value']['field'] = 'field_semester_value';
+  $handler->display->display_options['filters']['field_semester_value']['relationship'] = 'field_timetable_value';
+  $handler->display->display_options['filters']['field_semester_value']['group'] = 1;
+  $handler->display->display_options['filters']['field_semester_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_semester_value']['expose']['operator_id'] = 'field_semester_value_op';
+  $handler->display->display_options['filters']['field_semester_value']['expose']['label'] = 'Semester';
+  $handler->display->display_options['filters']['field_semester_value']['expose']['operator'] = 'field_semester_value_op';
+  $handler->display->display_options['filters']['field_semester_value']['expose']['identifier'] = 'field_semester_value';
+  $handler->display->display_options['filters']['field_semester_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
   );
 
   /* Display: Page */
