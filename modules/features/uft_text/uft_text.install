@@ -1,0 +1,20 @@
+<?php
+/**
+ * @file
+ * UFT Text feature.
+ */
+
+/**
+ * Update text feature.
+ */
+function uft_text_update_7100() {
+  _uft_text_flush_revert();
+}
+
+/**
+ * Helper function: flush caches and revert features.
+ */
+function _uft_text_flush_revert() {
+  drupal_flush_all_caches();
+  features_revert(array('uft_text'));
+}
