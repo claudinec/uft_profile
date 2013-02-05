@@ -10,3 +10,4 @@ dependencies[] = markdown
 dependencies[] = wysiwyg
 features[features_api][] = api:1
 features[filter][] = html
+features[wysiwyg][] = html
