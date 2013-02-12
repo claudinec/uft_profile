@@ -24,10 +24,10 @@ function uft_units_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Timetable';
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['group_by'] = TRUE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
   $handler->display->display_options['exposed_form']['options']['autosubmit'] = TRUE;
@@ -96,7 +96,7 @@ function uft_units_views_default_views() {
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['label'] = 'Unit Title';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   /* Field: Content: Mode of Teaching */
@@ -168,6 +168,50 @@ function uft_units_views_default_views() {
   $handler->display->display_options['filters']['field_timetable_year_value']['expose']['operator'] = 'field_timetable_year_value_op';
   $handler->display->display_options['filters']['field_timetable_year_value']['expose']['identifier'] = 'field_timetable_year_value';
   $handler->display->display_options['filters']['field_timetable_year_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+  );
+  /* Filter criterion: Content: Unit Code (field_unit_code) */
+  $handler->display->display_options['filters']['field_unit_code_value']['id'] = 'field_unit_code_value';
+  $handler->display->display_options['filters']['field_unit_code_value']['table'] = 'field_data_field_unit_code';
+  $handler->display->display_options['filters']['field_unit_code_value']['field'] = 'field_unit_code_value';
+  $handler->display->display_options['filters']['field_unit_code_value']['operator'] = 'contains';
+  $handler->display->display_options['filters']['field_unit_code_value']['group'] = 1;
+  $handler->display->display_options['filters']['field_unit_code_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_unit_code_value']['expose']['operator_id'] = 'field_unit_code_value_op';
+  $handler->display->display_options['filters']['field_unit_code_value']['expose']['label'] = 'Unit Code';
+  $handler->display->display_options['filters']['field_unit_code_value']['expose']['operator'] = 'field_unit_code_value_op';
+  $handler->display->display_options['filters']['field_unit_code_value']['expose']['identifier'] = 'field_unit_code_value';
+  $handler->display->display_options['filters']['field_unit_code_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+  );
+  /* Filter criterion: Content: Pre-2013 Unit Code (field_pre_2013_unit_code) */
+  $handler->display->display_options['filters']['field_pre_2013_unit_code_value']['id'] = 'field_pre_2013_unit_code_value';
+  $handler->display->display_options['filters']['field_pre_2013_unit_code_value']['table'] = 'field_data_field_pre_2013_unit_code';
+  $handler->display->display_options['filters']['field_pre_2013_unit_code_value']['field'] = 'field_pre_2013_unit_code_value';
+  $handler->display->display_options['filters']['field_pre_2013_unit_code_value']['operator'] = 'contains';
+  $handler->display->display_options['filters']['field_pre_2013_unit_code_value']['group'] = 1;
+  $handler->display->display_options['filters']['field_pre_2013_unit_code_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_pre_2013_unit_code_value']['expose']['operator_id'] = 'field_pre_2013_unit_code_value_op';
+  $handler->display->display_options['filters']['field_pre_2013_unit_code_value']['expose']['label'] = 'Pre-2013 Unit Code';
+  $handler->display->display_options['filters']['field_pre_2013_unit_code_value']['expose']['operator'] = 'field_pre_2013_unit_code_value_op';
+  $handler->display->display_options['filters']['field_pre_2013_unit_code_value']['expose']['identifier'] = 'field_pre_2013_unit_code_value';
+  $handler->display->display_options['filters']['field_pre_2013_unit_code_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+  );
+  /* Filter criterion: Content: Title */
+  $handler->display->display_options['filters']['title']['id'] = 'title';
+  $handler->display->display_options['filters']['title']['table'] = 'node';
+  $handler->display->display_options['filters']['title']['field'] = 'title';
+  $handler->display->display_options['filters']['title']['operator'] = 'contains';
+  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['label'] = 'Unit Title';
+  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
+  $handler->display->display_options['filters']['title']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
   );

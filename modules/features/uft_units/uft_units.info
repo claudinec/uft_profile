@@ -43,6 +43,7 @@ features[features_api][] = api:1
 features[feeds_importer][] = timetable
 features[feeds_importer][] = units
 features[feeds_tamper][] = units-btheol_field-explode
+features[feeds_tamper][] = units-course_type-explode
 features[feeds_tamper][] = units-mode_of_teaching-explode
 features[field][] = field_collection_item-field_timetable-field_day
 features[field][] = field_collection_item-field_timetable-field_semester
