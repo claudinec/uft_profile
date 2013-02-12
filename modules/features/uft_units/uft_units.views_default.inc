@@ -24,6 +24,7 @@ function uft_units_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Timetable';
   $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['group_by'] = TRUE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -102,6 +103,7 @@ function uft_units_views_default_views() {
   $handler->display->display_options['fields']['field_mode_of_teaching']['id'] = 'field_mode_of_teaching';
   $handler->display->display_options['fields']['field_mode_of_teaching']['table'] = 'field_data_field_mode_of_teaching';
   $handler->display->display_options['fields']['field_mode_of_teaching']['field'] = 'field_mode_of_teaching';
+  $handler->display->display_options['fields']['field_mode_of_teaching']['delta_limit'] = 'all';
   /* Sort criterion: Field collection item: Semester (field_semester) */
   $handler->display->display_options['sorts']['field_semester_value']['id'] = 'field_semester_value';
   $handler->display->display_options['sorts']['field_semester_value']['table'] = 'field_data_field_semester';
@@ -166,21 +168,6 @@ function uft_units_views_default_views() {
   $handler->display->display_options['filters']['field_timetable_year_value']['expose']['operator'] = 'field_timetable_year_value_op';
   $handler->display->display_options['filters']['field_timetable_year_value']['expose']['identifier'] = 'field_timetable_year_value';
   $handler->display->display_options['filters']['field_timetable_year_value']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-  );
-  /* Filter criterion: Field collection item: Semester (field_semester) */
-  $handler->display->display_options['filters']['field_semester_value']['id'] = 'field_semester_value';
-  $handler->display->display_options['filters']['field_semester_value']['table'] = 'field_data_field_semester';
-  $handler->display->display_options['filters']['field_semester_value']['field'] = 'field_semester_value';
-  $handler->display->display_options['filters']['field_semester_value']['relationship'] = 'field_timetable_value';
-  $handler->display->display_options['filters']['field_semester_value']['group'] = 1;
-  $handler->display->display_options['filters']['field_semester_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_semester_value']['expose']['operator_id'] = 'field_semester_value_op';
-  $handler->display->display_options['filters']['field_semester_value']['expose']['label'] = 'Semester';
-  $handler->display->display_options['filters']['field_semester_value']['expose']['operator'] = 'field_semester_value_op';
-  $handler->display->display_options['filters']['field_semester_value']['expose']['identifier'] = 'field_semester_value';
-  $handler->display->display_options['filters']['field_semester_value']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
   );

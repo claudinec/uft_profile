@@ -712,7 +712,7 @@ function uft_units_field_default_fields() {
   $fields['node-unit-field_mode_of_teaching'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '2',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_mode_of_teaching',
@@ -1441,7 +1441,7 @@ function uft_units_field_default_fields() {
   $fields['node-unit-field_unit_field'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '2',
+      'cardinality' => '3',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_unit_field',
