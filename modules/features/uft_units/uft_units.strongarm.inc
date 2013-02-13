@@ -48,11 +48,6 @@ function uft_units_strongarm() {
         ),
         'path' => array(
           'weight' => '2',
-    'view_modes' => array(),
-    'extra_fields' => array(
-      'form' => array(
-        'title' => array(
-          'weight' => '-5',
         ),
       ),
       'display' => array(),
