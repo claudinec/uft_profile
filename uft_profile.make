@@ -156,7 +156,11 @@ projects[libraries][version] = "2.0"
 
 projects[link][subdir] = "contrib"
 projects[link][type] = "module"
-projects[link][version] = "1.0"
+projects[link][version] = "1.1"
+
+projects[linkchecker][subdir] = "contrib"
+projects[linkchecker][type] = "module"
+projects[linkchecker][version] = "1.0"
 
 projects[logintoboggan][subdir] = "contrib"
 projects[logintoboggan][type] = "module"
@@ -209,6 +213,10 @@ projects[omega_tools][version] = "3.0-rc4"
 projects[pathauto][subdir] = "contrib"
 projects[pathauto][type] = "module"
 projects[pathauto][version] = "1.2"
+
+projects[pathologic][subdir] = "contrib"
+projects[pathologic][type] = "module"
+projects[pathologic][version] = "2.10"
 
 projects[print][subdir] = "contrib"
 projects[print][type] = "module"
