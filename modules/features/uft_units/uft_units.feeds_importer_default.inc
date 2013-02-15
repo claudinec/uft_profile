@@ -204,6 +204,11 @@ function uft_units_feeds_importer_default() {
             'target' => 'field_courses',
             'unique' => FALSE,
           ),
+          20 => array(
+            'source' => 'Unit Frequency',
+            'target' => 'field_unit_frequency',
+            'unique' => FALSE,
+          ),
         ),
         'update_existing' => '1',
         'input_format' => 'html',

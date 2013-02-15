@@ -71,6 +71,150 @@ function uft_units_field_default_fields() {
     ),
   );
 
+  // Exported field: 'field_collection_item-field_timetable-field_lecturer'.
+  $fields['field_collection_item-field_timetable-field_lecturer'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '4',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_lecturer',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'staff_profile' => 'staff_profile',
+          ),
+        ),
+        'target_type' => 'node',
+      ),
+      'translatable' => '0',
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_timetable',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 4,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_lecturer',
+      'label' => 'Lecturer',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'size' => '60',
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => '5',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_timetable-field_location'.
+  $fields['field_collection_item-field_timetable-field_location'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_location',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          'CTM' => 'Centre for Theology and Ministry',
+          'JTC' => 'Jesuit Theological College',
+          'OWL' => 'Old Warden\'s Lodge Trinity College',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'list_text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_timetable',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => 3,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_location',
+      'label' => 'Location',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'autocomplete_widgets',
+        'settings' => array(
+          'autocomplete_case' => '1',
+          'autocomplete_match' => 'contains',
+          'autocomplete_xss' => '0',
+          'i18n_flddata' => 0,
+          'size' => '60',
+        ),
+        'type' => 'autocomplete_widgets_allowvals',
+        'weight' => '4',
+      ),
+    ),
+  );
+
   // Exported field: 'field_collection_item-field_timetable-field_semester'.
   $fields['field_collection_item-field_timetable-field_semester'] = array(
     'field_config' => array(
@@ -251,7 +395,7 @@ function uft_units_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '17',
+        'weight' => '18',
       ),
     ),
   );
@@ -406,7 +550,7 @@ function uft_units_field_default_fields() {
           'suggested_values' => '',
         ),
         'type' => 'autocomplete_widgets_suggested',
-        'weight' => '12',
+        'weight' => '13',
       ),
     ),
   );
@@ -480,7 +624,7 @@ function uft_units_field_default_fields() {
           'suggested_values' => '',
         ),
         'type' => 'autocomplete_widgets_suggested',
-        'weight' => '11',
+        'weight' => '12',
       ),
     ),
   );
@@ -572,7 +716,7 @@ function uft_units_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'file_generic',
-        'weight' => '21',
+        'weight' => '22',
       ),
     ),
   );
@@ -703,7 +847,7 @@ function uft_units_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '15',
+        'weight' => '16',
       ),
     ),
   );
@@ -772,7 +916,7 @@ function uft_units_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '19',
+        'weight' => '20',
       ),
     ),
   );
@@ -836,7 +980,7 @@ function uft_units_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '14',
+        'weight' => '15',
       ),
     ),
   );
@@ -972,7 +1116,7 @@ function uft_units_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '16',
+        'weight' => '17',
       ),
     ),
   );
@@ -1039,7 +1183,7 @@ function uft_units_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '18',
+        'weight' => '19',
       ),
     ),
   );
@@ -1172,7 +1316,7 @@ function uft_units_field_default_fields() {
           'rows' => 5,
         ),
         'type' => 'text_textarea',
-        'weight' => '20',
+        'weight' => '21',
       ),
     ),
   );
@@ -1234,7 +1378,7 @@ function uft_units_field_default_fields() {
         'module' => 'field_collection',
         'settings' => array(),
         'type' => 'field_collection_embed',
-        'weight' => '9',
+        'weight' => '10',
       ),
     ),
   );
@@ -1296,7 +1440,7 @@ function uft_units_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => '13',
+        'weight' => '14',
       ),
     ),
   );
@@ -1497,7 +1641,75 @@ function uft_units_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '10',
+        'weight' => '11',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-unit-field_unit_frequency'.
+  $fields['node-unit-field_unit_frequency'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_unit_frequency',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          1 => 'Annual',
+          2 => 'Biennial',
+          3 => 'Occasional',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'list_integer',
+    ),
+    'field_instance' => array(
+      'bundle' => 'unit',
+      'default_value' => array(
+        0 => array(
+          'value' => '1',
+        ),
+      ),
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => 20,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_unit_frequency',
+      'label' => 'Unit Frequency',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '9',
       ),
     ),
   );
@@ -1579,6 +1791,8 @@ function uft_units_field_default_fields() {
   t('Discipline');
   t('File attachments');
   t('Learning Outcomes');
+  t('Lecturer');
+  t('Location');
   t('MDiv Type of Study');
   t('Mode of Teaching');
   t('Postgraduate Level');
@@ -1594,6 +1808,7 @@ function uft_units_field_default_fields() {
   t('Unit Code');
   t('Unit Content');
   t('Unit Field');
+  t('Unit Frequency');
   t('Unit Value');
 
   return $fields;
