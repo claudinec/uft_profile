@@ -262,6 +262,10 @@ projects[themekey][subdir] = "contrib"
 projects[themekey][type] = "module"
 projects[themekey][version] = "2.3"
 
+projects[timefield][subdir] = "contrib"
+projects[timefield][type] = "module"
+projects[timefield][version] = "1.0-alpha2"
+
 projects[token][subdir] = "contrib"
 projects[token][type] = "module"
 projects[token][version] = "1.4"

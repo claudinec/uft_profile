@@ -88,6 +88,21 @@ function uft_units_views_default_views() {
   $handler->display->display_options['fields']['field_day']['table'] = 'field_data_field_day';
   $handler->display->display_options['fields']['field_day']['field'] = 'field_day';
   $handler->display->display_options['fields']['field_day']['relationship'] = 'field_timetable_value';
+  /* Field: Field collection item: Timetable Time */
+  $handler->display->display_options['fields']['field_timetable_time']['id'] = 'field_timetable_time';
+  $handler->display->display_options['fields']['field_timetable_time']['table'] = 'field_data_field_timetable_time';
+  $handler->display->display_options['fields']['field_timetable_time']['field'] = 'field_timetable_time';
+  $handler->display->display_options['fields']['field_timetable_time']['relationship'] = 'field_timetable_value';
+  $handler->display->display_options['fields']['field_timetable_time']['label'] = 'Time';
+  $handler->display->display_options['fields']['field_timetable_time']['settings'] = array(
+    'display_format' => array(
+      'hour' => 'g',
+      'minute' => 'i',
+      'separator' => ':',
+      'period' => 'a',
+      'period_separator' => '',
+    ),
+  );
   /* Field: Content: Unit Code */
   $handler->display->display_options['fields']['field_unit_code']['id'] = 'field_unit_code';
   $handler->display->display_options['fields']['field_unit_code']['table'] = 'field_data_field_unit_code';
@@ -114,6 +129,11 @@ function uft_units_views_default_views() {
   $handler->display->display_options['sorts']['field_day_value']['table'] = 'field_data_field_day';
   $handler->display->display_options['sorts']['field_day_value']['field'] = 'field_day_value';
   $handler->display->display_options['sorts']['field_day_value']['relationship'] = 'field_timetable_value';
+  /* Sort criterion: Field collection item: Timetable Time (field_timetable_time) */
+  $handler->display->display_options['sorts']['field_timetable_time_value']['id'] = 'field_timetable_time_value';
+  $handler->display->display_options['sorts']['field_timetable_time_value']['table'] = 'field_data_field_timetable_time';
+  $handler->display->display_options['sorts']['field_timetable_time_value']['field'] = 'field_timetable_time_value';
+  $handler->display->display_options['sorts']['field_timetable_time_value']['relationship'] = 'field_timetable_value';
   /* Sort criterion: Content: Unit Code (field_unit_code) */
   $handler->display->display_options['sorts']['field_unit_code_value']['id'] = 'field_unit_code_value';
   $handler->display->display_options['sorts']['field_unit_code_value']['table'] = 'field_data_field_unit_code';

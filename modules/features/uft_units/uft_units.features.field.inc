@@ -66,7 +66,7 @@ function uft_units_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '3',
+        'weight' => '2',
       ),
     ),
   );
@@ -103,7 +103,9 @@ function uft_units_field_default_fields() {
             ),
           ),
           'sort' => array(
-            'type' => 'none',
+            'direction' => 'ASC',
+            'property' => 'title',
+            'type' => 'property',
           ),
           'target_bundles' => array(
             'staff_profile' => 'staff_profile',
@@ -139,13 +141,13 @@ function uft_units_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'entityreference',
+        'module' => 'options',
         'settings' => array(
-          'match_operator' => 'CONTAINS',
+          'match_operator' => 'STARTS_WITH',
           'path' => '',
           'size' => '60',
         ),
-        'type' => 'entityreference_autocomplete',
+        'type' => 'options_select',
         'weight' => '5',
       ),
     ),
@@ -171,7 +173,7 @@ function uft_units_field_default_fields() {
         'allowed_values' => array(
           'CTM' => 'Centre for Theology and Ministry',
           'JTC' => 'Jesuit Theological College',
-          'OWL' => 'Old Warden\'s Lodge Trinity College',
+          'OWL' => 'Old Warden\'s Lodge, Trinity College',
         ),
         'allowed_values_function' => '',
       ),
@@ -201,15 +203,9 @@ function uft_units_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'autocomplete_widgets',
-        'settings' => array(
-          'autocomplete_case' => '1',
-          'autocomplete_match' => 'contains',
-          'autocomplete_xss' => '0',
-          'i18n_flddata' => 0,
-          'size' => '60',
-        ),
-        'type' => 'autocomplete_widgets_allowvals',
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
         'weight' => '4',
       ),
     ),
@@ -268,7 +264,85 @@ function uft_units_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '2',
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_timetable-field_timetable_time'.
+  $fields['field_collection_item-field_timetable-field_timetable_time'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_timetable_time',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'timefield',
+      'settings' => array(
+        'totime' => 'required',
+        'weekly_summary' => 0,
+        'weekly_summary_with_label' => 0,
+      ),
+      'translatable' => '0',
+      'type' => 'timefield',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_timetable',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'timefield',
+          'settings' => array(
+            'display_format' => array(
+              'hour' => 'g',
+              'minute' => 'i',
+              'period' => 'a',
+              'period_separator' => '',
+              'separator' => ':',
+            ),
+          ),
+          'type' => 'timefield_default',
+          'weight' => 5,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_timetable_time',
+      'label' => 'Timetable Time',
+      'required' => 0,
+      'settings' => array(
+        'disable_plugin' => 0,
+        'input_format' => array(
+          'am_text' => 'AM',
+          'atPosition' => 'left bottom',
+          'closeButtonText' => 'Done',
+          'deselectButtonText' => 'Deselect',
+          'myPosition' => 'left top',
+          'nowButtonText' => 'Now',
+          'periodSeparator' => '',
+          'pm_text' => 'PM',
+          'separator' => ':',
+          'showCloseButton' => 0,
+          'showDeselectButton' => 0,
+          'showLeadingZero' => 0,
+          'showNowButton' => 0,
+          'showPeriod' => 1,
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'timefield',
+        'settings' => array(
+          'label_position' => 'above',
+        ),
+        'type' => 'timefield_standard',
+        'weight' => '3',
       ),
     ),
   );
@@ -328,7 +402,7 @@ function uft_units_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => '1',
+        'weight' => '0',
       ),
     ),
   );
@@ -1803,6 +1877,7 @@ function uft_units_field_default_fields() {
   t('Semester');
   t('Teaching Methods');
   t('Timetable');
+  t('Timetable Time');
   t('Timetable Year');
   t('Undergraduate Level');
   t('Unit Code');
