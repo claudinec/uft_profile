@@ -115,6 +115,15 @@ function uft_units_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = 'Unit Title';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Courses */
+  $handler->display->display_options['fields']['field_courses']['id'] = 'field_courses';
+  $handler->display->display_options['fields']['field_courses']['table'] = 'field_data_field_courses';
+  $handler->display->display_options['fields']['field_courses']['field'] = 'field_courses';
+  $handler->display->display_options['fields']['field_courses']['settings'] = array(
+    'link' => 1,
+  );
+  $handler->display->display_options['fields']['field_courses']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_courses']['multi_type'] = 'ul';
   /* Field: Field collection item: Lecturer */
   $handler->display->display_options['fields']['field_lecturer']['id'] = 'field_lecturer';
   $handler->display->display_options['fields']['field_lecturer']['table'] = 'field_data_field_lecturer';
@@ -185,9 +194,12 @@ function uft_units_views_default_views() {
   $handler->display->display_options['filters']['field_courses_target_id']['expose']['label'] = 'Courses';
   $handler->display->display_options['filters']['field_courses_target_id']['expose']['operator'] = 'field_courses_target_id_op';
   $handler->display->display_options['filters']['field_courses_target_id']['expose']['identifier'] = 'field_courses_target_id';
+  $handler->display->display_options['filters']['field_courses_target_id']['expose']['remember'] = TRUE;
   $handler->display->display_options['filters']['field_courses_target_id']['expose']['remember_roles'] = array(
     2 => '2',
-    1 => 0,
+    1 => '1',
+    3 => 0,
+    4 => 0,
   );
   $handler->display->display_options['filters']['field_courses_target_id']['group_info']['label'] = 'Courses (field_courses)';
   $handler->display->display_options['filters']['field_courses_target_id']['group_info']['identifier'] = 'field_courses_target_id';
@@ -411,9 +423,9 @@ function uft_units_views_default_views() {
       'label' => '',
     ),
     'action::node_unpublish_action' => array(
-      'selected' => 0,
-      'postpone_processing' => 0,
-      'skip_confirmation' => 0,
+      'selected' => 1,
+      'postpone_processing' => 1,
+      'skip_confirmation' => 1,
       'override_label' => 0,
       'label' => '',
     ),
