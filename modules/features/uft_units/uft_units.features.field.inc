@@ -129,13 +129,13 @@ function uft_units_field_default_fields() {
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
-          'weight' => 4,
+          'weight' => '5',
         ),
       ),
       'entity_type' => 'field_collection_item',
       'field_name' => 'field_lecturer',
       'label' => 'Lecturer',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -191,7 +191,7 @@ function uft_units_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => 3,
+          'weight' => '4',
         ),
       ),
       'entity_type' => 'field_collection_item',
@@ -269,6 +269,66 @@ function uft_units_field_default_fields() {
     ),
   );
 
+  // Exported field: 'field_collection_item-field_timetable-field_timetable_notes'.
+  $fields['field_collection_item-field_timetable-field_timetable_notes'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_timetable_notes',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'text_long',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_timetable',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '6',
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_timetable_notes',
+      'label' => 'Timetable notes',
+      'required' => FALSE,
+      'settings' => array(
+        'text_processing' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'text',
+        'settings' => array(
+          'rows' => 5,
+        ),
+        'type' => 'text_textarea',
+        'weight' => '6',
+      ),
+    ),
+  );
+
   // Exported field: 'field_collection_item-field_timetable-field_timetable_time'.
   $fields['field_collection_item-field_timetable-field_timetable_time'] = array(
     'field_config' => array(
@@ -308,7 +368,7 @@ function uft_units_field_default_fields() {
             ),
           ),
           'type' => 'timefield_default',
-          'weight' => 5,
+          'weight' => '3',
         ),
       ),
       'entity_type' => 'field_collection_item',
@@ -1879,6 +1939,7 @@ function uft_units_field_default_fields() {
   t('Timetable');
   t('Timetable Time');
   t('Timetable Year');
+  t('Timetable notes');
   t('Undergraduate Level');
   t('Unit Code');
   t('Unit Content');

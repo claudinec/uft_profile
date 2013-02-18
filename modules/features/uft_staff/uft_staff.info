@@ -10,7 +10,6 @@ dependencies[] = autocomplete_widgets
 dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = feeds
-dependencies[] = menu
 dependencies[] = revisioning
 dependencies[] = strongarm
 dependencies[] = uft_users
