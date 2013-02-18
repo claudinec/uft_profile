@@ -145,68 +145,68 @@ function uft_units_feeds_importer_default() {
             'unique' => FALSE,
           ),
           8 => array(
-            'source' => 'Disciplines',
-            'target' => 'field_discipline',
-            'unique' => FALSE,
-          ),
-          9 => array(
             'source' => 'GradDip Field',
             'target' => 'field_postgraduate_level',
             'unique' => FALSE,
           ),
-          10 => array(
+          9 => array(
             'source' => 'Learning Outcomes',
             'target' => 'field_learning_outcomes',
             'unique' => FALSE,
           ),
-          11 => array(
+          10 => array(
             'source' => 'MDiv Type of Study',
             'target' => 'field_mdiv_type_of_study',
             'unique' => FALSE,
           ),
-          12 => array(
+          11 => array(
             'source' => 'Mode of Teaching',
             'target' => 'field_mode_of_teaching',
             'unique' => FALSE,
           ),
-          13 => array(
+          12 => array(
             'source' => 'Pre-2013 Unit Code',
             'target' => 'field_pre_2013_unit_code',
             'unique' => FALSE,
           ),
-          14 => array(
+          13 => array(
             'source' => 'Prerequisites',
             'target' => 'field_prerequisites',
             'unique' => FALSE,
           ),
-          15 => array(
+          14 => array(
             'source' => 'Prohibited Combinations',
             'target' => 'field_prohibited_combinations',
             'unique' => FALSE,
           ),
-          16 => array(
+          15 => array(
             'source' => 'RTI',
             'target' => 'field_rti',
             'unique' => FALSE,
           ),
-          17 => array(
+          16 => array(
             'source' => 'Teaching Methods',
             'target' => 'field_teaching_methods',
             'unique' => FALSE,
           ),
-          18 => array(
+          17 => array(
             'source' => 'Undergraduate Level',
             'target' => 'field_undergraduate_level',
             'unique' => FALSE,
           ),
-          19 => array(
+          18 => array(
             'source' => 'Course Type',
             'target' => 'field_courses',
             'unique' => FALSE,
           ),
-          20 => array(
+          19 => array(
             'source' => 'Unit Frequency',
             'target' => 'field_unit_frequency',
+            'unique' => FALSE,
+          ),
+          20 => array(
+            'source' => 'Disciplines',
+            'target' => 'field_discipline',
             'unique' => FALSE,
           ),
         ),

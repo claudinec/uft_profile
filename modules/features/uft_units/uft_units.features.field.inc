@@ -126,7 +126,7 @@ function uft_units_field_default_fields() {
           'label' => 'above',
           'module' => 'entityreference',
           'settings' => array(
-            'link' => FALSE,
+            'link' => 1,
           ),
           'type' => 'entityreference_label',
           'weight' => '5',
@@ -157,7 +157,7 @@ function uft_units_field_default_fields() {
   $fields['field_collection_item-field_timetable-field_location'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '2',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_location',
@@ -174,6 +174,7 @@ function uft_units_field_default_fields() {
           'CTM' => 'Centre for Theology and Ministry',
           'JTC' => 'Jesuit Theological College',
           'OWL' => 'Old Warden\'s Lodge, Trinity College',
+          'NN' => 'New Norcia',
         ),
         'allowed_values_function' => '',
       ),
@@ -232,6 +233,7 @@ function uft_units_field_default_fields() {
           0 => 'Year-long',
           1 => 'Semester 1',
           2 => 'Semester 2',
+          3 => 'Intensive/non-semester',
         ),
         'allowed_values_function' => '',
       ),
@@ -609,7 +611,7 @@ function uft_units_field_default_fields() {
         'active' => 1,
         'module' => 'options',
         'settings' => array(),
-        'type' => 'options_buttons',
+        'type' => 'options_select',
         'weight' => '6',
       ),
     ),
@@ -685,80 +687,6 @@ function uft_units_field_default_fields() {
         ),
         'type' => 'autocomplete_widgets_suggested',
         'weight' => '13',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-unit-field_discipline'.
-  $fields['node-unit-field_discipline'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '4',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_discipline',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => '255',
-      ),
-      'translatable' => '0',
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'unit',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => '8',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_discipline',
-      'label' => 'Discipline',
-      'required' => 0,
-      'settings' => array(
-        'text_processing' => '0',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'autocomplete_widgets',
-        'settings' => array(
-          'autocomplete_case' => '1',
-          'autocomplete_match' => 'contains',
-          'autocomplete_xss' => '0',
-          'i18n_flddata' => 0,
-          'size' => '60',
-          'suggested_values' => '',
-        ),
-        'type' => 'autocomplete_widgets_suggested',
-        'weight' => '12',
       ),
     ),
   );
@@ -1916,6 +1844,69 @@ function uft_units_field_default_fields() {
     ),
   );
 
+  // Exported field: 'taxonomy_term-disciplines-field_discipline_id'.
+  $fields['taxonomy_term-disciplines-field_discipline_id'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_discipline_id',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '2',
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'disciplines',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'taxonomy_term',
+      'field_name' => 'field_discipline_id',
+      'label' => 'Discipline ID',
+      'required' => 1,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => '60',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '0',
+      ),
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Corequisites');
@@ -1923,6 +1914,7 @@ function uft_units_field_default_fields() {
   t('Day');
   t('Department');
   t('Discipline');
+  t('Discipline ID');
   t('File attachments');
   t('Learning Outcomes');
   t('Lecturer');
