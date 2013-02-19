@@ -1,28 +1,28 @@
 <?php
+/**
+ * @file
+ * uft_staff.features.menu_links.inc
+ */
 
 /**
- * Implementation of hook_menu_default_menu_links().
+ * Implements hook_menu_default_menu_links().
  */
 function uft_staff_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: primary-links:staff
-  $menu_links['primary-links:staff'] = array(
-    'menu_name' => 'primary-links',
+  // Exported menu link: main-menu:staff
+  $menu_links['main-menu:staff'] = array(
+    'menu_name' => 'main-menu',
     'link_path' => 'staff',
     'router_path' => 'staff',
     'link_title' => 'Staff',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-    ),
-    'module' => 'menu',
+    'options' => array(),
+    'module' => 'system',
     'hidden' => '0',
     'external' => '0',
-    'has_children' => '1',
+    'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-47',
+    'weight' => '0',
   );
   // Translatables
   // Included for use with string extractors like potx.

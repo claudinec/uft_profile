@@ -19,6 +19,13 @@ function uft_courses_ctools_plugin_api() {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function uft_courses_views_api() {
+  return array("version" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function uft_courses_node_info() {
