@@ -206,10 +206,6 @@ projects[og][subdir] = "contrib"
 projects[og][type] = "module"
 projects[og][version] = "2.0-rc1"
 
-projects[omega_tools][subdir] = "contrib"
-projects[omega_tools][type] = "module"
-projects[omega_tools][version] = "3.0-rc4"
-
 projects[pathauto][subdir] = "contrib"
 projects[pathauto][type] = "module"
 projects[pathauto][version] = "1.2"
@@ -309,9 +305,9 @@ projects[xmlsitemap][version] = "2.0-rc2"
 ; Themes
 ; --------
 
-projects[omega][subdir] = "contrib"
-projects[omega][type] = "theme"
-projects[omega][version] = "3.1"
+projects[adaptivetheme][subdir] = "contrib"
+projects[adaptivetheme][type] = "theme"
+projects[adaptivetheme][version] = "3.1"
 
 ; Libraries
 ; ---------
