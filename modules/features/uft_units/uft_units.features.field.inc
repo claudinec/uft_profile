@@ -531,7 +531,7 @@ function uft_units_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '18',
+        'weight' => '17',
       ),
     ),
   );
@@ -626,25 +626,6 @@ function uft_units_field_default_fields() {
       'entity_types' => array(),
       'field_name' => 'field_department',
       'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => '255',
-      ),
-      'translatable' => '0',
-      'type' => 'text',
         'node' => array(
           'columns' => array(
             'target_id' => 'nid',
@@ -677,6 +658,7 @@ function uft_units_field_default_fields() {
         'target_type' => 'taxonomy_term',
       ),
       'translatable' => '0',
+      'type' => 'entityreference',
     ),
     'field_instance' => array(
       'bundle' => 'unit',
@@ -686,10 +668,12 @@ function uft_units_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => '9',
+          'module' => 'entityreference',
+          'settings' => array(
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 21,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -712,17 +696,10 @@ function uft_units_field_default_fields() {
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'autocomplete_widgets',
-        'settings' => array(
-          'autocomplete_case' => '1',
-          'autocomplete_match' => 'contains',
-          'autocomplete_xss' => '0',
-          'i18n_flddata' => 0,
-          'size' => '60',
-          'suggested_values' => '',
-        ),
-        'type' => 'autocomplete_widgets_suggested',
-        'weight' => '13',
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => '12',
       ),
     ),
   );
@@ -945,7 +922,7 @@ function uft_units_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '16',
+        'weight' => '15',
       ),
     ),
   );
