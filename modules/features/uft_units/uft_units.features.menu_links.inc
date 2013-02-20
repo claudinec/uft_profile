@@ -1,21 +1,21 @@
 <?php
 /**
  * @file
- * uft_staff.features.menu_links.inc
+ * uft_units.features.menu_links.inc
  */
 
 /**
  * Implements hook_menu_default_menu_links().
  */
-function uft_staff_menu_default_menu_links() {
+function uft_units_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu:staff
-  $menu_links['main-menu:staff'] = array(
+  // Exported menu link: main-menu:timetable
+  $menu_links['main-menu:timetable'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'staff',
-    'router_path' => 'staff',
-    'link_title' => 'Staff',
+    'link_path' => 'timetable',
+    'router_path' => 'timetable',
+    'link_title' => 'Timetables',
     'options' => array(),
     'module' => 'system',
     'hidden' => '0',
@@ -26,7 +26,7 @@ function uft_staff_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Staff');
+  t('Timetables');
 
 
   return $menu_links;

@@ -62,7 +62,7 @@ function uft_courses_field_default_fields() {
       'label' => 'Course Description',
       'required' => 1,
       'settings' => array(
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -129,7 +129,7 @@ function uft_courses_field_default_fields() {
       'label' => 'Course Pathways',
       'required' => 0,
       'settings' => array(
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -196,7 +196,7 @@ function uft_courses_field_default_fields() {
       'label' => 'Course Structure',
       'required' => 0,
       'settings' => array(
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -327,7 +327,7 @@ function uft_courses_field_default_fields() {
       'label' => 'Course Volume',
       'required' => 0,
       'settings' => array(
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -394,7 +394,7 @@ function uft_courses_field_default_fields() {
       'label' => 'Entry Requirements',
       'required' => 0,
       'settings' => array(
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -553,7 +553,7 @@ function uft_courses_field_default_fields() {
       'label' => 'Graduate Outcomes',
       'required' => 0,
       'settings' => array(
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -563,7 +563,7 @@ function uft_courses_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '0',
+        'weight' => 0,
       ),
     ),
   );
@@ -620,7 +620,7 @@ function uft_courses_field_default_fields() {
       'label' => 'Modes of Study',
       'required' => 0,
       'settings' => array(
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
