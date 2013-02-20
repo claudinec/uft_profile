@@ -49,14 +49,6 @@ function uft_text_filter_default_formats() {
         'status' => '1',
         'settings' => array(),
       ),
-      'pathologic' => array(
-        'weight' => '50',
-        'status' => '1',
-        'settings' => array(
-          'local_paths' => '',
-          'protocol_style' => 'full',
-        ),
-      ),
     ),
   );
 
