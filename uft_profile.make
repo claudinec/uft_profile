@@ -39,9 +39,8 @@ projects[autocomplete_widgets][subdir] = "contrib"
 projects[autocomplete_widgets][type] = "module"
 projects[autocomplete_widgets][version = "1.0-beta2"
 
-; projects[backup_migrate][subdir] = "contrib"
-; projects[backup_migrate][type] = "module"
-; projects[backup_migrate][version] = "2.4"
+projects[backup_migrate][subdir] = "contrib"
+projects[backup_migrate][type] = "module"
 
 projects[better_formats][subdir] = "contrib"
 projects[better_formats][type] = "module"
