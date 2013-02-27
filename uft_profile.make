@@ -35,8 +35,8 @@ projects[auto_nodetitle][subdir] = "contrib"
 projects[auto_nodetitle][type] = "module"
 projects[auto_nodetitle][version = 1.0
 
-projects[backup_migrate][subdir] = "contrib"
-projects[backup_migrate][type] = "module"
+; projects[backup_migrate][subdir] = "contrib"
+; projects[backup_migrate][type] = "module"
 ; projects[backup_migrate][version] = "2.4"
 
 projects[better_formats][subdir] = "contrib"
