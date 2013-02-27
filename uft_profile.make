@@ -273,6 +273,10 @@ projects[webform][subdir] = "contrib"
 projects[webform][type] = "module"
 projects[webform][version] = "3.18"
 
+projects[wysiwyg][subdir] = "contrib"
+projects[wysiwyg][type] = "module"
+projects[wysiwyg][version] = "2.2"
+
 projects[xmlsitemap][subdir] = "contrib"
 projects[xmlsitemap][type] = "module"
 projects[xmlsitemap][version] = "2.0-rc2"
