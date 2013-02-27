@@ -8,6 +8,7 @@ dependencies[] = admin_menu
 ; dependencies[] = backup_migrate
 dependencies[] = ctools
 dependencies[] = devel
+dependencies[] = diff
 dependencies[] = features
 dependencies[] = fpa
 dependencies[] = module_filter
