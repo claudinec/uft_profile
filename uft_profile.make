@@ -222,10 +222,6 @@ projects[profile2][subdir] = "contrib"
 projects[profile2][type] = "module"
 projects[profile2][version] = "1.3"
 
-projects[profiler][subdir] = "contrib"
-projects[profiler][type] = "module"
-projects[profiler][version] = "2.0-beta1"
-
 projects[revisioning][subdir] = "contrib"
 projects[revisioning][type] = "module"
 projects[revisioning][version] = "1.4"
@@ -314,7 +310,7 @@ projects[adaptivetheme][version] = "3.1"
 
 libraries[ckeditor][type] = "libraries"
 libraries[ckeditor][download][type] = "file"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.0/ckeditor_4.0_full.tar.gz"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.4/ckeditor_3.6.4.tar.gz"
 
 libraries[profiler][type] = "libraries"
 libraries[profiler][download][type] = "get"
