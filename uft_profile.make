@@ -214,10 +214,6 @@ projects[profile2][subdir] = "contrib"
 projects[profile2][type] = "module"
 projects[profile2][version] = "1.3"
 
-projects[profiler][subdir] = "contrib"
-projects[profiler][type] = "module"
-projects[profiler][version] = "2.0-beta1"
-
 projects[revisioning][subdir] = "contrib"
 projects[revisioning][type] = "module"
 projects[revisioning][version] = "1.4"
@@ -284,13 +280,18 @@ projects[xmlsitemap][version] = "2.0-rc2"
 ; Themes
 ; --------
 
-projects[omega][subdir] = "contrib"
-projects[omega][type] = "theme"
-projects[omega][version] = "3.1"
+projects[adaptivetheme][subdir] = "contrib"
+projects[adaptivetheme][type] = "theme"
+projects[adaptivetheme][version] = "3.1"
 
 ; Libraries
 ; ---------
 
-projects[profiler][type] = libraries
-projects[profiler][version] = "2.0-beta1"
+libraries[ckeditor][type] = "libraries"
+libraries[ckeditor][download][type] = "file"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.4/ckeditor_3.6.4.tar.gz"
+
+libraries[profiler][type] = "libraries"
+libraries[profiler][download][type] = "get"
+libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profiler-7.x-2.0-beta1.tar.gz"
 
