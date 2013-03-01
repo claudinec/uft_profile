@@ -670,6 +670,7 @@ function uft_staff_field_default_fields() {
   t('Postgraduate supervision');
   t('Qualifications');
   t('Research interests');
+  t('Staff type');
   t('Surname');
   t('Teaching interests');
   t('User account reference');
