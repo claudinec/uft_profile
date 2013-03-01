@@ -29,7 +29,7 @@ projects[drupal][version] = 7
 
 projects[admin_menu][subdir] = "contrib"
 projects[admin_menu][type] = "module"
-projects[admin_menu][version] = "3.0-rc3"
+projects[admin_menu][version] = "3.0-rc4"
 
 projects[auto_nodetitle][subdir] = "contrib"
 projects[auto_nodetitle][type] = "module"
