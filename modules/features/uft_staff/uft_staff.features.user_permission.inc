@@ -10,15 +10,6 @@
 function uft_staff_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: clear staff feeds.
-  $permissions['clear staff feeds'] = array(
-    'name' => 'clear staff feeds',
-    'roles' => array(
-      0 => 'Administrator',
-    ),
-    'module' => 'feeds',
-  );
-
   // Exported permission: create staff_profile content.
   $permissions['create staff_profile content'] = array(
     'name' => 'create staff_profile content',
@@ -62,15 +53,6 @@ function uft_staff_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: import staff feeds.
-  $permissions['import staff feeds'] = array(
-    'name' => 'import staff feeds',
-    'roles' => array(
-      0 => 'Administrator',
-    ),
-    'module' => 'feeds',
-  );
-
   // Exported permission: publish revisions of any staff_profile content.
   $permissions['publish revisions of any staff_profile content'] = array(
     'name' => 'publish revisions of any staff_profile content',
@@ -87,24 +69,6 @@ function uft_staff_user_default_permissions() {
       0 => 'Administrator',
     ),
     'module' => 'revisioning',
-  );
-
-  // Exported permission: tamper staff.
-  $permissions['tamper staff'] = array(
-    'name' => 'tamper staff',
-    'roles' => array(
-      0 => 'Administrator',
-    ),
-    'module' => 'feeds_tamper',
-  );
-
-  // Exported permission: unlock staff feeds.
-  $permissions['unlock staff feeds'] = array(
-    'name' => 'unlock staff feeds',
-    'roles' => array(
-      0 => 'Administrator',
-    ),
-    'module' => 'feeds',
   );
 
   // Exported permission: view revisions of any staff_profile content.

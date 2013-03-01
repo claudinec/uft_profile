@@ -88,7 +88,7 @@ function uft_staff_views_default_views() {
   $handler->display->display_options['fields']['field_first_name']['label'] = '';
   $handler->display->display_options['fields']['field_first_name']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_first_name']['element_label_colon'] = FALSE;
-  /* Field: Broken/missing handler */
+  /* Field: Content: Staff type */
   $handler->display->display_options['fields']['field_staff_type']['id'] = 'field_staff_type';
   $handler->display->display_options['fields']['field_staff_type']['table'] = 'field_data_field_staff_type';
   $handler->display->display_options['fields']['field_staff_type']['field'] = 'field_staff_type';
@@ -102,7 +102,7 @@ function uft_staff_views_default_views() {
   $handler->display->display_options['fields']['field_surname']['label'] = '';
   $handler->display->display_options['fields']['field_surname']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_surname']['element_label_colon'] = FALSE;
-  /* Sort criterion: Broken/missing handler */
+  /* Sort criterion: Content: Staff type (field_staff_type) */
   $handler->display->display_options['sorts']['field_staff_type_value']['id'] = 'field_staff_type_value';
   $handler->display->display_options['sorts']['field_staff_type_value']['table'] = 'field_data_field_staff_type';
   $handler->display->display_options['sorts']['field_staff_type_value']['field'] = 'field_staff_type_value';
