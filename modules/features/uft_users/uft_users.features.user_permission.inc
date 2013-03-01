@@ -147,6 +147,13 @@ function uft_users_user_default_permissions() {
     'module' => 'block',
   );
 
+  // Exported permission: administer actions.
+  $permissions['administer actions'] = array(
+    'name' => 'administer actions',
+    'roles' => array(),
+    'module' => 'system',
+  );
+
   // Exported permission: administer content types.
   $permissions['administer content types'] = array(
     'name' => 'administer content types',

@@ -17,7 +17,6 @@ dependencies[] = pathauto
 dependencies[] = revisioning
 dependencies[] = search
 dependencies[] = views
-datestamp = 1361924905
 features[features_api][] = api:1
 features[user_permission][] = access administration menu
 features[user_permission][] = access administration pages

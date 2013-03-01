@@ -60,26 +60,36 @@ function uft_staff_feeds_importer_default() {
             'pathauto_override' => 1,
           ),
           4 => array(
+            'source' => 'College',
+            'target' => 'field_college',
+            'unique' => FALSE,
+          ),
+          5 => array(
             'source' => 'Department Name',
             'target' => 'field_department',
             'unique' => FALSE,
           ),
-          5 => array(
+          6 => array(
             'source' => 'Postgraduate Supervision',
             'target' => 'field_postgraduate_supervision',
             'unique' => FALSE,
           ),
-          6 => array(
+          7 => array(
             'source' => 'Qualifications',
             'target' => 'field_qualifications',
             'unique' => FALSE,
           ),
-          7 => array(
+          8 => array(
             'source' => 'Research Interests',
             'target' => 'field_research_interests',
             'unique' => FALSE,
           ),
-          8 => array(
+          9 => array(
+            'source' => 'Staff Type',
+            'target' => 'field_staff_type',
+            'unique' => FALSE,
+          ),
+          10 => array(
             'source' => 'Teaching Interests',
             'target' => 'field_teaching_interests',
             'unique' => FALSE,

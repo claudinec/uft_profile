@@ -49,11 +49,6 @@ function uft_text_filter_default_formats() {
         'status' => '1',
         'settings' => array(),
       ),
-      'filter_markdown' => array(
-        'weight' => '-44',
-        'status' => '1',
-        'settings' => array(),
-      ),
     ),
   );
 
