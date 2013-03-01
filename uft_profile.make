@@ -97,6 +97,7 @@ projects[entity][version] = "1.0"
 projects[entityreference][subdir] = "contrib"
 projects[entityreference][type] = "module"
 projects[entityreference][version] = "1.0"
+projects[entityreference][patch][] = "http://drupal.org/files/entityreference-1459540-47-workaround-fatal-error.patch"
 
 projects[extlink][subdir] = "contrib"
 projects[extlink][type] = "module"
