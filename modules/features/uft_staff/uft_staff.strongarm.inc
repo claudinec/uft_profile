@@ -14,7 +14,7 @@ function uft_staff_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ant_pattern_staff_profile';
-  $strongarm->value = '[node:field_first_name] [node:field_surname]';
+  $strongarm->value = '[node:field-first-name] [node:field-surname]';
   $export['ant_pattern_staff_profile'] = $strongarm;
 
   $strongarm = new stdClass();
