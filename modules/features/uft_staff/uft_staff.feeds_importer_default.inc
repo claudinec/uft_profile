@@ -96,7 +96,7 @@ function uft_staff_feeds_importer_default() {
           ),
         ),
         'update_existing' => '2',
-        'input_format' => 'plain_text',
+        'input_format' => 'html',
         'skip_hash_check' => 0,
       ),
     ),

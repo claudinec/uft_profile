@@ -22,7 +22,9 @@ function uft_staff_user_default_permissions() {
   // Exported permission: create staff_profile content.
   $permissions['create staff_profile content'] = array(
     'name' => 'create staff_profile content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Administrator',
+    ),
     'module' => 'node',
   );
 
