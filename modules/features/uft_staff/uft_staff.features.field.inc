@@ -122,7 +122,7 @@ function uft_staff_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => 17,
+          'weight' => '6',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -134,7 +134,7 @@ function uft_staff_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_college',
       'label' => 'College',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -142,7 +142,7 @@ function uft_staff_field_default_fields() {
         'active' => 1,
         'module' => 'options',
         'settings' => array(),
-        'type' => 'options_select',
+        'type' => 'options_buttons',
         'weight' => '8',
       ),
     ),
@@ -156,14 +156,7 @@ function uft_staff_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_department',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
+      'foreign keys' => array(),
       'indexes' => array(
         'target_id' => array(
           0 => 'target_id',
@@ -204,7 +197,7 @@ function uft_staff_field_default_fields() {
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
-          'weight' => 10,
+          'weight' => '7',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -274,7 +267,7 @@ function uft_staff_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '15',
+          'weight' => '9',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -341,7 +334,7 @@ function uft_staff_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '8',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -438,7 +431,7 @@ function uft_staff_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'autocomplete_widgets_flddata',
-        'weight' => '5',
+        'weight' => '6',
       ),
     ),
   );
@@ -481,7 +474,7 @@ function uft_staff_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '7',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -540,11 +533,7 @@ function uft_staff_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'staff_profile',
-      'default_value' => array(
-        0 => array(
-          'value' => '1',
-        ),
-      ),
+      'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -553,7 +542,7 @@ function uft_staff_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => 4,
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -573,8 +562,8 @@ function uft_staff_field_default_fields() {
         'active' => 1,
         'module' => 'options',
         'settings' => array(),
-        'type' => 'options_select',
-        'weight' => '6',
+        'type' => 'options_buttons',
+        'weight' => '5',
       ),
     ),
   );
@@ -618,7 +607,7 @@ function uft_staff_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '16',
+          'weight' => '10',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -685,7 +674,7 @@ function uft_staff_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '6',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -723,11 +712,11 @@ function uft_staff_field_default_fields() {
       'entity_types' => array(),
       'field_name' => 'field_user_account_reference',
       'foreign keys' => array(
-        'node' => array(
+        'users' => array(
           'columns' => array(
-            'target_id' => 'nid',
+            'target_id' => 'uid',
           ),
-          'table' => 'node',
+          'table' => 'users',
         ),
       ),
       'indexes' => array(
@@ -765,7 +754,7 @@ function uft_staff_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '14',
+          'weight' => '8',
         ),
         'teaser' => array(
           'label' => 'above',
