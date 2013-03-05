@@ -156,6 +156,15 @@ function uft_users_user_default_permissions() {
     'module' => 'system',
   );
 
+  // Exported permission: administer blocks.
+  $permissions['administer blocks'] = array(
+    'name' => 'administer blocks',
+    'roles' => array(
+      0 => 'Administrator',
+    ),
+    'module' => 'block',
+  );
+
   // Exported permission: administer backup and migrate.
   $permissions['administer backup and migrate'] = array(
     'name' => 'administer backup and migrate',
