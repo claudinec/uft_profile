@@ -14,7 +14,7 @@ function uft_users_user_default_permissions() {
   $permissions['access administration menu'] = array(
     'name' => 'access administration menu',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'admin_menu',
   );
@@ -23,18 +23,27 @@ function uft_users_user_default_permissions() {
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'system',
   );
 
-  // Exported permission: access all views.
-  $permissions['access all views'] = array(
-    'name' => 'access all views',
+  // Exported permission: access backup and migrate.
+  $permissions['access backup and migrate'] = array(
+    'name' => 'access backup and migrate',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
-    'module' => 'views',
+    'module' => 'backup_migrate',
+  );
+
+  // Exported permission: access backup files.
+  $permissions['access backup files'] = array(
+    'name' => 'access backup files',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'backup_migrate',
   );
 
   // Exported permission: access content.
@@ -56,6 +65,15 @@ function uft_users_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: access dashboard.
+  $permissions['access dashboard'] = array(
+    'name' => 'access dashboard',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'dashboard',
+  );
+
   // Exported permission: access devel information.
   $permissions['access devel information'] = array(
     'name' => 'access devel information',
@@ -69,7 +87,7 @@ function uft_users_user_default_permissions() {
   $permissions['access site in maintenance mode'] = array(
     'name' => 'access site in maintenance mode',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'system',
   );
@@ -78,7 +96,7 @@ function uft_users_user_default_permissions() {
   $permissions['access site reports'] = array(
     'name' => 'access site reports',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'system',
   );
@@ -87,8 +105,8 @@ function uft_users_user_default_permissions() {
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
     'roles' => array(
-      0 => 'Administrator',
-      1 => 'Staff',
+      'Administrator' => 'Administrator',
+      'Staff' => 'Staff',
     ),
     'module' => 'user',
   );
@@ -154,6 +172,24 @@ function uft_users_user_default_permissions() {
     'module' => 'system',
   );
 
+  // Exported permission: administer backup and migrate.
+  $permissions['administer backup and migrate'] = array(
+    'name' => 'administer backup and migrate',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'backup_migrate',
+  );
+
+  // Exported permission: administer blocks.
+  $permissions['administer blocks'] = array(
+    'name' => 'administer blocks',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'block',
+  );
+
   // Exported permission: administer content types.
   $permissions['administer content types'] = array(
     'name' => 'administer content types',
@@ -194,7 +230,7 @@ function uft_users_user_default_permissions() {
   $permissions['administer module filter'] = array(
     'name' => 'administer module filter',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'module_filter',
   );
@@ -203,7 +239,7 @@ function uft_users_user_default_permissions() {
   $permissions['administer modules'] = array(
     'name' => 'administer modules',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'system',
   );
@@ -230,7 +266,7 @@ function uft_users_user_default_permissions() {
   $permissions['administer permissions'] = array(
     'name' => 'administer permissions',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'user',
   );
@@ -239,16 +275,25 @@ function uft_users_user_default_permissions() {
   $permissions['administer search'] = array(
     'name' => 'administer search',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'search',
+  );
+
+  // Exported permission: administer shortcuts.
+  $permissions['administer shortcuts'] = array(
+    'name' => 'administer shortcuts',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'shortcut',
   );
 
   // Exported permission: administer site configuration.
   $permissions['administer site configuration'] = array(
     'name' => 'administer site configuration',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'system',
   );
@@ -257,7 +302,7 @@ function uft_users_user_default_permissions() {
   $permissions['administer software updates'] = array(
     'name' => 'administer software updates',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'system',
   );
@@ -266,7 +311,7 @@ function uft_users_user_default_permissions() {
   $permissions['administer themes'] = array(
     'name' => 'administer themes',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'system',
   );
@@ -284,7 +329,7 @@ function uft_users_user_default_permissions() {
   $permissions['administer users'] = array(
     'name' => 'administer users',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'user',
   );
@@ -302,7 +347,7 @@ function uft_users_user_default_permissions() {
   $permissions['block IP addresses'] = array(
     'name' => 'block IP addresses',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'system',
   );
@@ -334,16 +379,34 @@ function uft_users_user_default_permissions() {
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'path',
+  );
+
+  // Exported permission: customize shortcut links.
+  $permissions['customize shortcut links'] = array(
+    'name' => 'customize shortcut links',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'shortcut',
+  );
+
+  // Exported permission: delete backup files.
+  $permissions['delete backup files'] = array(
+    'name' => 'delete backup files',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'backup_migrate',
   );
 
   // Exported permission: delete revisions.
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'node',
   );
@@ -359,7 +422,7 @@ function uft_users_user_default_permissions() {
   $permissions['edit revisions'] = array(
     'name' => 'edit revisions',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'revisioning',
   );
@@ -396,20 +459,38 @@ function uft_users_user_default_permissions() {
     'module' => 'pathauto',
   );
 
+  // Exported permission: perform backup.
+  $permissions['perform backup'] = array(
+    'name' => 'perform backup',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'backup_migrate',
+  );
+
   // Exported permission: publish revisions.
   $permissions['publish revisions'] = array(
     'name' => 'publish revisions',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'revisioning',
+  );
+
+  // Exported permission: restore from backup.
+  $permissions['restore from backup'] = array(
+    'name' => 'restore from backup',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'backup_migrate',
   );
 
   // Exported permission: revert revisions.
   $permissions['revert revisions'] = array(
     'name' => 'revert revisions',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'node',
   );
@@ -418,7 +499,7 @@ function uft_users_user_default_permissions() {
   $permissions['search content'] = array(
     'name' => 'search content',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'search',
   );
@@ -428,6 +509,15 @@ function uft_users_user_default_permissions() {
     'name' => 'select account cancellation method',
     'roles' => array(),
     'module' => 'user',
+  );
+
+  // Exported permission: switch shortcut sets.
+  $permissions['switch shortcut sets'] = array(
+    'name' => 'switch shortcut sets',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'shortcut',
   );
 
   // Exported permission: switch users.
@@ -441,7 +531,7 @@ function uft_users_user_default_permissions() {
   $permissions['unpublish current revision'] = array(
     'name' => 'unpublish current revision',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'revisioning',
   );
@@ -459,7 +549,7 @@ function uft_users_user_default_permissions() {
   $permissions['use advanced search'] = array(
     'name' => 'use advanced search',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'search',
   );
@@ -477,7 +567,7 @@ function uft_users_user_default_permissions() {
   $permissions['view revision status messages'] = array(
     'name' => 'view revision status messages',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'revisioning',
   );
@@ -486,8 +576,8 @@ function uft_users_user_default_permissions() {
   $permissions['view revisions'] = array(
     'name' => 'view revisions',
     'roles' => array(
-      0 => 'Administrator',
-      1 => 'Staff',
+      'Administrator' => 'Administrator',
+      'Staff' => 'Staff',
     ),
     'module' => 'node',
   );
@@ -496,7 +586,7 @@ function uft_users_user_default_permissions() {
   $permissions['view the administration theme'] = array(
     'name' => 'view the administration theme',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'system',
   );
