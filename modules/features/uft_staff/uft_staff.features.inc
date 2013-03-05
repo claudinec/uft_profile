@@ -13,10 +13,6 @@ function uft_staff_ctools_plugin_api() {
     return array("version" => "1");
   }
   list($module, $api) = func_get_args();
-  if ($module == "feeds_tamper" && $api == "feeds_tamper_default") {
-    return array("version" => "2");
-  }
-  list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -26,7 +22,7 @@ function uft_staff_ctools_plugin_api() {
  * Implements hook_views_api().
  */
 function uft_staff_views_api() {
-  return array("version" => "3.0");
+  return array("api" => "3.0");
 }
 
 /**

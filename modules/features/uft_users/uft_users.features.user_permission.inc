@@ -37,26 +37,31 @@ function uft_users_user_default_permissions() {
     'module' => 'backup_migrate',
   );
 
-  // Exported permission: access backup files.
-  $permissions['access backup files'] = array(
-    'name' => 'access backup files',
+  // Exported permission: access all views.
+  $permissions['access all views'] = array(
+    'name' => 'access all views',
     'roles' => array(
-      'Administrator' => 'Administrator',
+      0 => 'Administrator',
     ),
-    'module' => 'backup_migrate',
+    'module' => 'views',
   );
 
   // Exported permission: access content.
   $permissions['access content'] = array(
     'name' => 'access content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'anonymous user',
+      1 => 'authenticated user',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: access content overview.
   $permissions['access content overview'] = array(
     'name' => 'access content overview',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Administrator',
+    ),
     'module' => 'node',
   );
 
@@ -72,7 +77,9 @@ function uft_users_user_default_permissions() {
   // Exported permission: access devel information.
   $permissions['access devel information'] = array(
     'name' => 'access devel information',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Administrator',
+    ),
     'module' => 'devel',
   );
 
@@ -104,11 +111,58 @@ function uft_users_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: admin_classes.
+  $permissions['admin_classes'] = array(
+    'name' => 'admin_classes',
+    'roles' => array(
+      0 => 'Administrator',
+    ),
+    'module' => 'ds_ui',
+  );
+
+  // Exported permission: admin_display_suite.
+  $permissions['admin_display_suite'] = array(
+    'name' => 'admin_display_suite',
+    'roles' => array(
+      0 => 'Administrator',
+    ),
+    'module' => 'ds',
+  );
+
+  // Exported permission: admin_fields.
+  $permissions['admin_fields'] = array(
+    'name' => 'admin_fields',
+    'roles' => array(
+      0 => 'Administrator',
+    ),
+    'module' => 'ds_ui',
+  );
+
+  // Exported permission: admin_view_modes.
+  $permissions['admin_view_modes'] = array(
+    'name' => 'admin_view_modes',
+    'roles' => array(
+      0 => 'Administrator',
+    ),
+    'module' => 'ds_ui',
+  );
+
   // Exported permission: administer actions.
   $permissions['administer actions'] = array(
     'name' => 'administer actions',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Administrator',
+    ),
     'module' => 'system',
+  );
+
+  // Exported permission: administer blocks.
+  $permissions['administer blocks'] = array(
+    'name' => 'administer blocks',
+    'roles' => array(
+      0 => 'Administrator',
+    ),
+    'module' => 'block',
   );
 
   // Exported permission: administer backup and migrate.
@@ -132,15 +186,37 @@ function uft_users_user_default_permissions() {
   // Exported permission: administer content types.
   $permissions['administer content types'] = array(
     'name' => 'administer content types',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: administer features.
   $permissions['administer features'] = array(
     'name' => 'administer features',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Administrator',
+    ),
     'module' => 'features',
+  );
+
+  // Exported permission: administer feeds.
+  $permissions['administer feeds'] = array(
+    'name' => 'administer feeds',
+    'roles' => array(
+      0 => 'Administrator',
+    ),
+    'module' => 'feeds',
+  );
+
+  // Exported permission: administer feeds_tamper.
+  $permissions['administer feeds_tamper'] = array(
+    'name' => 'administer feeds_tamper',
+    'roles' => array(
+      0 => 'Administrator',
+    ),
+    'module' => 'feeds_tamper',
   );
 
   // Exported permission: administer module filter.
@@ -164,14 +240,18 @@ function uft_users_user_default_permissions() {
   // Exported permission: administer nodes.
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: administer pathauto.
   $permissions['administer pathauto'] = array(
     'name' => 'administer pathauto',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Administrator',
+    ),
     'module' => 'pathauto',
   );
 
@@ -232,7 +312,9 @@ function uft_users_user_default_permissions() {
   // Exported permission: administer url aliases.
   $permissions['administer url aliases'] = array(
     'name' => 'administer url aliases',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Administrator',
+    ),
     'module' => 'path',
   );
 
@@ -243,6 +325,15 @@ function uft_users_user_default_permissions() {
       'Administrator' => 'Administrator',
     ),
     'module' => 'user',
+  );
+
+  // Exported permission: administer views.
+  $permissions['administer views'] = array(
+    'name' => 'administer views',
+    'roles' => array(
+      0 => 'Administrator',
+    ),
+    'module' => 'views',
   );
 
   // Exported permission: block IP addresses.
@@ -257,7 +348,9 @@ function uft_users_user_default_permissions() {
   // Exported permission: bypass node access.
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Administrator',
+    ),
     'module' => 'node',
   );
 
@@ -337,14 +430,18 @@ function uft_users_user_default_permissions() {
   // Exported permission: flush caches.
   $permissions['flush caches'] = array(
     'name' => 'flush caches',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Administrator',
+    ),
     'module' => 'admin_menu',
   );
 
   // Exported permission: manage features.
   $permissions['manage features'] = array(
     'name' => 'manage features',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'Administrator',
+    ),
     'module' => 'features',
   );
 
@@ -432,6 +529,15 @@ function uft_users_user_default_permissions() {
     'module' => 'revisioning',
   );
 
+  // Exported permission: use PHP for title patterns.
+  $permissions['use PHP for title patterns'] = array(
+    'name' => 'use PHP for title patterns',
+    'roles' => array(
+      0 => 'Administrator',
+    ),
+    'module' => 'auto_nodetitle',
+  );
+
   // Exported permission: use advanced search.
   $permissions['use advanced search'] = array(
     'name' => 'use advanced search',
@@ -444,7 +550,9 @@ function uft_users_user_default_permissions() {
   // Exported permission: view own unpublished content.
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'authenticated user',
+    ),
     'module' => 'node',
   );
 
