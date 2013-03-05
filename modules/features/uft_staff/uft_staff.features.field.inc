@@ -568,7 +568,6 @@ function uft_staff_field_default_fields() {
     ),
   );
 
->>>>>>> uft_staff: feeds importer seems to have trouble with list (integer) fields
   // Exported field: 'node-staff_profile-field_surname'.
   $fields['node-staff_profile-field_surname'] = array(
     'field_config' => array(
