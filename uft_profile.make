@@ -88,7 +88,7 @@ projects[disable_messages][version] = "1.1"
 
 projects[ds][subdir] = "contrib"
 projects[ds][type] = "module"
-projects[ds][version] = "2.0"
+projects[ds][version] = "2.2"
 
 projects[entity][subdir] = "contrib"
 projects[entity][type] = "module"
