@@ -122,7 +122,7 @@ function uft_staff_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => 17,
+          'weight' => '6',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -134,7 +134,7 @@ function uft_staff_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_college',
       'label' => 'College',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -142,7 +142,7 @@ function uft_staff_field_default_fields() {
         'active' => 1,
         'module' => 'options',
         'settings' => array(),
-        'type' => 'options_select',
+        'type' => 'options_buttons',
         'weight' => '8',
       ),
     ),
@@ -156,14 +156,7 @@ function uft_staff_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_department',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
+      'foreign keys' => array(),
       'indexes' => array(
         'target_id' => array(
           0 => 'target_id',
@@ -274,7 +267,7 @@ function uft_staff_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '15',
+          'weight' => '9',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -341,7 +334,7 @@ function uft_staff_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '8',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -438,7 +431,7 @@ function uft_staff_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'autocomplete_widgets_flddata',
-        'weight' => '5',
+        'weight' => '6',
       ),
     ),
   );
@@ -481,7 +474,7 @@ function uft_staff_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '7',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -510,6 +503,72 @@ function uft_staff_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-staff_profile-field_staff_type'.
+  $fields['node-staff_profile-field_staff_type'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_staff_type',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => 'Office Staff',
+          1 => 'Academic Staff',
+          2 => 'External Staff',
+          3 => 'Former Staff',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'list_integer',
+    ),
+    'field_instance' => array(
+      'bundle' => 'staff_profile',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => '0',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_staff_type',
+      'label' => 'Staff type',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => '5',
+      ),
+    ),
+  );
+
+>>>>>>> uft_staff: feeds importer seems to have trouble with list (integer) fields
   // Exported field: 'node-staff_profile-field_surname'.
   $fields['node-staff_profile-field_surname'] = array(
     'field_config' => array(
@@ -549,7 +608,7 @@ function uft_staff_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '16',
+          'weight' => '10',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -616,7 +675,7 @@ function uft_staff_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '6',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -654,11 +713,11 @@ function uft_staff_field_default_fields() {
       'entity_types' => array(),
       'field_name' => 'field_user_account_reference',
       'foreign keys' => array(
-        'node' => array(
+        'users' => array(
           'columns' => array(
-            'target_id' => 'nid',
+            'target_id' => 'uid',
           ),
-          'table' => 'node',
+          'table' => 'users',
         ),
       ),
       'indexes' => array(
@@ -696,7 +755,7 @@ function uft_staff_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '14',
+          'weight' => '8',
         ),
         'teaser' => array(
           'label' => 'above',

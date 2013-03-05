@@ -16,7 +16,7 @@ function uft_staff_feeds_importer_default() {
   $feeds_importer->id = 'staff';
   $feeds_importer->config = array(
     'name' => 'Staff',
-    'description' => 'Staff from 2012 site',
+    'description' => 'Staff profile importer',
     'fetcher' => array(
       'plugin_key' => 'FeedsFileFetcher',
       'config' => array(
