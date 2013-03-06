@@ -197,15 +197,6 @@ function uft_users_user_default_permissions() {
     'module' => 'feeds',
   );
 
-  // Exported permission: administer feeds_tamper.
-  $permissions['administer feeds_tamper'] = array(
-    'name' => 'administer feeds_tamper',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-    ),
-    'module' => 'feeds_tamper',
-  );
-
   // Exported permission: administer module filter.
   $permissions['administer module filter'] = array(
     'name' => 'administer module filter',
