@@ -27,7 +27,7 @@ function uft_text_filter_default_formats() {
         'weight' => '-49',
         'status' => '1',
         'settings' => array(
-          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <img>',
+          'allowed_html' => '<p> <br> <a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <img>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),
