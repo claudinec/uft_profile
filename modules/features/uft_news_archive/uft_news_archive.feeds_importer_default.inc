@@ -60,10 +60,10 @@ function uft_news_archive_feeds_importer_default() {
     ),
     'content_type' => '',
     'update' => 0,
-    'import_period' => 1800,
+    'import_period' => '86400',
     'expire_period' => 3600,
-    'import_on_create' => TRUE,
-    'process_in_background' => FALSE,
+    'import_on_create' => 1,
+    'process_in_background' => 0,
   );
   $export['news_archive'] = $feeds_importer;
 
