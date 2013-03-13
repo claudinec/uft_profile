@@ -19,6 +19,15 @@ function uft_text_user_default_permissions() {
     'module' => 'filter',
   );
 
+  // Exported permission: use text format full_html.
+  $permissions['use text format full_html'] = array(
+    'name' => 'use text format full_html',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'filter',
+  );
+
   // Exported permission: use text format html.
   $permissions['use text format html'] = array(
     'name' => 'use text format html',

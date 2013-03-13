@@ -10,10 +10,10 @@
 function uft_handbook_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu:node/104
-  $menu_links['main-menu:node/104'] = array(
+  // Exported menu link: main-menu:node/68
+  $menu_links['main-menu:node/68'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'node/104',
+    'link_path' => 'node/68',
     'router_path' => 'node/%',
     'link_title' => 'About the UFT',
     'options' => array(),
@@ -24,13 +24,17 @@ function uft_handbook_menu_default_menu_links() {
     'expanded' => '0',
     'weight' => '-49',
   );
-  // Exported menu link: main-menu:node/126
-  $menu_links['main-menu:node/126'] = array(
+  // Exported menu link: main-menu:node/90
+  $menu_links['main-menu:node/90'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'node/126',
+    'link_path' => 'node/90',
     'router_path' => 'node/%',
     'link_title' => 'Students',
-    'options' => array(),
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Information for current and prospective students',
+      ),
+    ),
     'module' => 'menu',
     'hidden' => '0',
     'external' => '0',
