@@ -10,8 +10,8 @@
 function uft_handbook_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-page-body'.
-  $fields['node-page-body'] = array(
+  // Exported field: 'node-book-body'.
+  $fields['node-book-body'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -40,7 +40,7 @@ function uft_handbook_field_default_fields() {
       'type' => 'text_with_summary',
     ),
     'field_instance' => array(
-      'bundle' => 'page',
+      'bundle' => 'book',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -78,7 +78,7 @@ function uft_handbook_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => -4,
+        'weight' => 31,
       ),
     ),
   );

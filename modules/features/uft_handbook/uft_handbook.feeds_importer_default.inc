@@ -35,7 +35,7 @@ function uft_handbook_feeds_importer_default() {
     'processor' => array(
       'plugin_key' => 'FeedsNodeProcessor',
       'config' => array(
-        'content_type' => 'page',
+        'content_type' => 'book',
         'expire' => '-1',
         'author' => '1',
         'authorize' => 1,

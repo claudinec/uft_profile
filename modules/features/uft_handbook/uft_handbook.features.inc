@@ -23,10 +23,10 @@ function uft_handbook_ctools_plugin_api() {
  */
 function uft_handbook_node_info() {
   $items = array(
-    'page' => array(
-      'name' => t('Basic page'),
+    'book' => array(
+      'name' => t('Book page'),
       'base' => 'node_content',
-      'description' => t('Use <em>basic pages</em> for your static content, such as an \'About us\' page.'),
+      'description' => t('<em>Books</em> have a built-in hierarchical navigation. Use for handbooks or tutorials.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
