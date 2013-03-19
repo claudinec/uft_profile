@@ -40,103 +40,98 @@ function uft_units_feeds_importer_default() {
         'authorize' => 1,
         'mappings' => array(
           0 => array(
-            'source' => 'Nid',
-            'target' => 'nid',
+            'source' => 'Title',
+            'target' => 'title',
             'unique' => 1,
           ),
           1 => array(
-            'source' => 'Title',
-            'target' => 'title',
-            'unique' => FALSE,
-          ),
-          2 => array(
             'source' => 'Body',
             'target' => 'field_unit_content',
             'unique' => FALSE,
           ),
-          3 => array(
+          2 => array(
             'source' => 'Path',
             'target' => 'path_alias',
             'pathauto_override' => 1,
           ),
-          4 => array(
+          3 => array(
             'source' => 'Unit Code',
             'target' => 'field_unit_code',
             'unique' => FALSE,
           ),
-          5 => array(
+          4 => array(
             'source' => 'BTheol Field',
             'target' => 'field_unit_field',
             'unique' => FALSE,
           ),
-          6 => array(
+          5 => array(
             'source' => 'Corequisites',
             'target' => 'field_corequisites',
             'unique' => FALSE,
           ),
-          7 => array(
-            'source' => 'Department Name',
-            'target' => 'field_department',
-            'unique' => FALSE,
-          ),
-          8 => array(
+          6 => array(
             'source' => 'GradDip Field',
             'target' => 'field_postgraduate_level',
             'unique' => FALSE,
           ),
-          9 => array(
+          7 => array(
             'source' => 'Learning Outcomes',
             'target' => 'field_learning_outcomes',
             'unique' => FALSE,
           ),
-          10 => array(
+          8 => array(
             'source' => 'MDiv Type of Study',
             'target' => 'field_mdiv_type_of_study',
             'unique' => FALSE,
           ),
-          11 => array(
+          9 => array(
             'source' => 'Mode of Teaching',
             'target' => 'field_mode_of_teaching',
             'unique' => FALSE,
           ),
-          12 => array(
+          10 => array(
             'source' => 'Pre-2013 Unit Code',
             'target' => 'field_pre_2013_unit_code',
             'unique' => FALSE,
           ),
-          13 => array(
+          11 => array(
             'source' => 'Prerequisites',
             'target' => 'field_prerequisites',
             'unique' => FALSE,
           ),
-          14 => array(
+          12 => array(
             'source' => 'Prohibited Combinations',
             'target' => 'field_prohibited_combinations',
             'unique' => FALSE,
           ),
-          15 => array(
+          13 => array(
             'source' => 'RTI',
             'target' => 'field_rti',
             'unique' => FALSE,
           ),
-          16 => array(
+          14 => array(
             'source' => 'Teaching Methods',
             'target' => 'field_teaching_methods',
             'unique' => FALSE,
           ),
-          17 => array(
+          15 => array(
             'source' => 'Undergraduate Level',
             'target' => 'field_undergraduate_level',
+            'unique' => FALSE,
+          ),
+          16 => array(
+            'source' => 'Unit Frequency',
+            'target' => 'field_unit_frequency',
+            'unique' => FALSE,
+          ),
+          17 => array(
+            'source' => 'Department Name',
+            'target' => 'field_department',
             'unique' => FALSE,
           ),
           18 => array(
             'source' => 'Course Type',
             'target' => 'field_courses',
-            'unique' => FALSE,
-          ),
-          19 => array(
-            'source' => 'Unit Frequency',
-            'target' => 'field_unit_frequency',
             'unique' => FALSE,
           ),
         ),

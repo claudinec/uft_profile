@@ -192,31 +192,6 @@ function uft_units_views_default_views() {
     'unit' => 'unit',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Courses (field_courses) */
-  $handler->display->display_options['filters']['field_courses_target_id']['id'] = 'field_courses_target_id';
-  $handler->display->display_options['filters']['field_courses_target_id']['table'] = 'field_data_field_courses';
-  $handler->display->display_options['filters']['field_courses_target_id']['field'] = 'field_courses_target_id';
-  $handler->display->display_options['filters']['field_courses_target_id']['group'] = 1;
-  $handler->display->display_options['filters']['field_courses_target_id']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_courses_target_id']['expose']['operator_id'] = 'field_courses_target_id_op';
-  $handler->display->display_options['filters']['field_courses_target_id']['expose']['label'] = 'Courses';
-  $handler->display->display_options['filters']['field_courses_target_id']['expose']['operator'] = 'field_courses_target_id_op';
-  $handler->display->display_options['filters']['field_courses_target_id']['expose']['identifier'] = 'field_courses_target_id';
-  $handler->display->display_options['filters']['field_courses_target_id']['expose']['remember'] = TRUE;
-  $handler->display->display_options['filters']['field_courses_target_id']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => '1',
-    3 => 0,
-    4 => 0,
-  );
-  $handler->display->display_options['filters']['field_courses_target_id']['group_info']['label'] = 'Courses (field_courses)';
-  $handler->display->display_options['filters']['field_courses_target_id']['group_info']['identifier'] = 'field_courses_target_id';
-  $handler->display->display_options['filters']['field_courses_target_id']['group_info']['remember'] = FALSE;
-  $handler->display->display_options['filters']['field_courses_target_id']['group_info']['group_items'] = array(
-    1 => array(),
-    2 => array(),
-    3 => array(),
-  );
   /* Filter criterion: Field collection item: Timetable Year (field_timetable_year) */
   $handler->display->display_options['filters']['field_timetable_year_value']['id'] = 'field_timetable_year_value';
   $handler->display->display_options['filters']['field_timetable_year_value']['table'] = 'field_data_field_timetable_year';
@@ -279,6 +254,21 @@ function uft_units_views_default_views() {
   $handler->display->display_options['filters']['title']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
+  );
+  /* Filter criterion: Content: Courses (field_courses) */
+  $handler->display->display_options['filters']['field_courses_value']['id'] = 'field_courses_value';
+  $handler->display->display_options['filters']['field_courses_value']['table'] = 'field_data_field_courses';
+  $handler->display->display_options['filters']['field_courses_value']['field'] = 'field_courses_value';
+  $handler->display->display_options['filters']['field_courses_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_courses_value']['expose']['operator_id'] = 'field_courses_value_op';
+  $handler->display->display_options['filters']['field_courses_value']['expose']['label'] = 'Courses';
+  $handler->display->display_options['filters']['field_courses_value']['expose']['operator'] = 'field_courses_value_op';
+  $handler->display->display_options['filters']['field_courses_value']['expose']['identifier'] = 'field_courses_value';
+  $handler->display->display_options['filters']['field_courses_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
   );
 
   /* Display: Page */

@@ -35,7 +35,7 @@ function uft_units_user_default_permissions() {
   $permissions['edit any unit content'] = array(
     'name' => 'edit any unit content',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'node',
   );
@@ -44,7 +44,7 @@ function uft_units_user_default_permissions() {
   $permissions['edit own unit content'] = array(
     'name' => 'edit own unit content',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'node',
   );
@@ -53,7 +53,7 @@ function uft_units_user_default_permissions() {
   $permissions['publish revisions of any unit content'] = array(
     'name' => 'publish revisions of any unit content',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'revisioning',
   );
@@ -62,7 +62,7 @@ function uft_units_user_default_permissions() {
   $permissions['publish revisions of own unit content'] = array(
     'name' => 'publish revisions of own unit content',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'revisioning',
   );
@@ -71,7 +71,7 @@ function uft_units_user_default_permissions() {
   $permissions['view revisions of any unit content'] = array(
     'name' => 'view revisions of any unit content',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'revisioning',
   );
@@ -80,7 +80,7 @@ function uft_units_user_default_permissions() {
   $permissions['view revisions of own unit content'] = array(
     'name' => 'view revisions of own unit content',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'revisioning',
   );
