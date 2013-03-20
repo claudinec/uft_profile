@@ -1,3 +1,12 @@
 <?php
 
 include_once('uft_units.features.inc');
+
+/**
+ * Implements hook_uninstall().
+ */
+function uft_units() {
+  field_delete_field('field_college');
+  field_delete_field('field_department');
+}
+

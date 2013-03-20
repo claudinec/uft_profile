@@ -5,3 +5,11 @@
  */
 
 include_once 'uft_staff.features.inc';
+
+/**
+ * Implements hook_uninstall().
+ */
+function uft_staff_uninstall() {
+  field_delete_field('field_department');
+}
+
