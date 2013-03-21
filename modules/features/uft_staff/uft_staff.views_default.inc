@@ -136,6 +136,58 @@ function uft_staff_views_default_views() {
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Staff';
   $handler->display->display_options['menu']['name'] = 'main-menu';
+
+  /* Display: Lecturers */
+  $handler = $view->new_display('entityreference', 'Lecturers', 'entityreference_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'entityreference_style';
+  $handler->display->display_options['style_options']['search_fields'] = array(
+    'field_surname' => 'field_surname',
+    'title' => 0,
+    'field_first_name' => 0,
+    'field_staff_type' => 0,
+  );
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'entityreference_fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content: Surname (field_surname) */
+  $handler->display->display_options['sorts']['field_surname_value']['id'] = 'field_surname_value';
+  $handler->display->display_options['sorts']['field_surname_value']['table'] = 'field_data_field_surname';
+  $handler->display->display_options['sorts']['field_surname_value']['field'] = 'field_surname_value';
+  /* Sort criterion: Content: First name (field_first_name) */
+  $handler->display->display_options['sorts']['field_first_name_value']['id'] = 'field_first_name_value';
+  $handler->display->display_options['sorts']['field_first_name_value']['table'] = 'field_data_field_first_name';
+  $handler->display->display_options['sorts']['field_first_name_value']['field'] = 'field_first_name_value';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'staff_profile' => 'staff_profile',
+  );
+  /* Filter criterion: Content: Staff type (field_staff_type) */
+  $handler->display->display_options['filters']['field_staff_type_value']['id'] = 'field_staff_type_value';
+  $handler->display->display_options['filters']['field_staff_type_value']['table'] = 'field_data_field_staff_type';
+  $handler->display->display_options['filters']['field_staff_type_value']['field'] = 'field_staff_type_value';
+  $handler->display->display_options['filters']['field_staff_type_value']['value'] = array(
+    1 => '1',
+    2 => '2',
+  );
   $export['staff'] = $view;
 
   return $export;

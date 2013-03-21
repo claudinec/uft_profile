@@ -95,20 +95,17 @@ function uft_units_field_default_fields() {
       'locked' => '0',
       'module' => 'entityreference',
       'settings' => array(
-        'handler' => 'base',
+        'handler' => 'views',
         'handler_settings' => array(
           'behaviors' => array(
             'views-select-list' => array(
               'status' => 0,
             ),
           ),
-          'sort' => array(
-            'direction' => 'ASC',
-            'property' => 'title',
-            'type' => 'property',
-          ),
-          'target_bundles' => array(
-            'staff_profile' => 'staff_profile',
+          'view' => array(
+            'args' => array(),
+            'display_name' => 'entityreference_1',
+            'view_name' => 'staff',
           ),
         ),
         'target_type' => 'node',
@@ -135,18 +132,14 @@ function uft_units_field_default_fields() {
       'entity_type' => 'field_collection_item',
       'field_name' => 'field_lecturer',
       'label' => 'Lecturer',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'options',
-        'settings' => array(
-          'match_operator' => 'STARTS_WITH',
-          'path' => '',
-          'size' => '60',
-        ),
+        'settings' => array(),
         'type' => 'options_select',
         'weight' => '5',
       ),
@@ -174,6 +167,7 @@ function uft_units_field_default_fields() {
           'CTM' => 'Centre for Theology and Ministry',
           'JTC' => 'Jesuit Theological College',
           'OWL' => 'Old Warden\'s Lodge, Trinity College',
+          'WHT' => 'Whitley College',
           'NN' => 'New Norcia',
         ),
         'allowed_values_function' => '',

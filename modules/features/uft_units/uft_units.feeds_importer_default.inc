@@ -40,14 +40,14 @@ function uft_units_feeds_importer_default() {
         'authorize' => 1,
         'mappings' => array(
           0 => array(
-            'source' => 'Title',
-            'target' => 'title',
-            'unique' => 1,
+            'source' => 'Unit Code',
+            'target' => 'field_unit_code',
+            'unique' => FALSE,
           ),
           1 => array(
-            'source' => 'Body',
-            'target' => 'field_unit_content',
-            'unique' => FALSE,
+            'source' => 'Title',
+            'target' => 'title',
+            'unique' => 0,
           ),
           2 => array(
             'source' => 'Path',
@@ -55,8 +55,8 @@ function uft_units_feeds_importer_default() {
             'pathauto_override' => 1,
           ),
           3 => array(
-            'source' => 'Unit Code',
-            'target' => 'field_unit_code',
+            'source' => 'Body',
+            'target' => 'field_unit_content',
             'unique' => FALSE,
           ),
           4 => array(
