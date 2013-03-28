@@ -72,6 +72,15 @@ function uft_users_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: access contextual links.
+  $permissions['access contextual links'] = array(
+    'name' => 'access contextual links',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'contextual',
+  );
+
   // Exported permission: access dashboard.
   $permissions['access dashboard'] = array(
     'name' => 'access dashboard',
@@ -161,6 +170,15 @@ function uft_users_user_default_permissions() {
     'module' => 'system',
   );
 
+  // Exported permission: administer backup and migrate.
+  $permissions['administer backup and migrate'] = array(
+    'name' => 'administer backup and migrate',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'backup_migrate',
+  );
+
   // Exported permission: administer blocks.
   $permissions['administer blocks'] = array(
     'name' => 'administer blocks',
@@ -170,6 +188,15 @@ function uft_users_user_default_permissions() {
     'module' => 'block',
   );
 
+  // Exported permission: administer boxes.
+  $permissions['administer boxes'] = array(
+    'name' => 'administer boxes',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'boxes',
+  );
+
   // Exported permission: administer content types.
   $permissions['administer content types'] = array(
     'name' => 'administer content types',
@@ -177,6 +204,15 @@ function uft_users_user_default_permissions() {
       'Administrator' => 'Administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: administer contexts.
+  $permissions['administer contexts'] = array(
+    'name' => 'administer contexts',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'context_ui',
   );
 
   // Exported permission: administer features.
@@ -389,6 +425,15 @@ function uft_users_user_default_permissions() {
     'module' => 'admin_menu',
   );
 
+  // Exported permission: edit boxes.
+  $permissions['edit boxes'] = array(
+    'name' => 'edit boxes',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'boxes',
+  );
+
   // Exported permission: edit revisions.
   $permissions['edit revisions'] = array(
     'name' => 'edit revisions',
@@ -471,6 +516,8 @@ function uft_users_user_default_permissions() {
     'name' => 'search content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'search',
   );
@@ -519,9 +566,7 @@ function uft_users_user_default_permissions() {
   // Exported permission: use advanced search.
   $permissions['use advanced search'] = array(
     'name' => 'use advanced search',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-    ),
+    'roles' => array(),
     'module' => 'search',
   );
 
