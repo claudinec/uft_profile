@@ -10,7 +10,6 @@ dependencies[] = ctools
 dependencies[] = devel
 dependencies[] = diff
 dependencies[] = features
-dependencies[] = fpa
 dependencies[] = module_filter
 dependencies[] = token
 

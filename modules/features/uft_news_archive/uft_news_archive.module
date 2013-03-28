@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the UFT News Archive feature.
+ */
+
+include_once 'uft_news_archive.features.inc';

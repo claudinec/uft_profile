@@ -1,38 +1,38 @@
 <?php
+/**
+ * @file
+ * uft_handbook.features.menu_links.inc
+ */
 
 /**
- * Implementation of hook_menu_default_menu_links().
+ * Implements hook_menu_default_menu_links().
  */
 function uft_handbook_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: primary-links:node/26
-  $menu_links['primary-links:node/26'] = array(
-    'menu_name' => 'primary-links',
-    'link_path' => 'node/26',
+  // Exported menu link: main-menu:node/68
+  $menu_links['main-menu:node/68'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/68',
     'router_path' => 'node/%',
     'link_title' => 'About the UFT',
-    'options' => array(
-      'attributes' => array(
-        'title' => 'About The UFT',
-      ),
-    ),
+    'options' => array(),
     'module' => 'menu',
     'hidden' => '0',
     'external' => '0',
-    'has_children' => '1',
+    'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-50',
+    'weight' => '-49',
   );
-  // Exported menu link: primary-links:node/870
-  $menu_links['primary-links:node/870'] = array(
-    'menu_name' => 'primary-links',
-    'link_path' => 'node/870',
+  // Exported menu link: main-menu:node/90
+  $menu_links['main-menu:node/90'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/90',
     'router_path' => 'node/%',
     'link_title' => 'Students',
     'options' => array(
       'attributes' => array(
-        'title' => 'Students',
+        'title' => 'Information for current and prospective students',
       ),
     ),
     'module' => 'menu',

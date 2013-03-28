@@ -16,7 +16,7 @@ function uft_staff_feeds_importer_default() {
   $feeds_importer->id = 'staff';
   $feeds_importer->config = array(
     'name' => 'Staff',
-    'description' => 'Staff from 2012 site',
+    'description' => 'Staff profile importer',
     'fetcher' => array(
       'plugin_key' => 'FeedsFileFetcher',
       'config' => array(
@@ -60,43 +60,43 @@ function uft_staff_feeds_importer_default() {
             'pathauto_override' => 1,
           ),
           4 => array(
-            'source' => 'College',
-            'target' => 'field_college',
-            'unique' => FALSE,
-          ),
-          5 => array(
             'source' => 'Department Name',
             'target' => 'field_department',
             'unique' => FALSE,
           ),
-          6 => array(
+          5 => array(
             'source' => 'Postgraduate Supervision',
             'target' => 'field_postgraduate_supervision',
             'unique' => FALSE,
           ),
-          7 => array(
+          6 => array(
             'source' => 'Qualifications',
             'target' => 'field_qualifications',
             'unique' => FALSE,
           ),
-          8 => array(
+          7 => array(
             'source' => 'Research Interests',
             'target' => 'field_research_interests',
             'unique' => FALSE,
           ),
-          9 => array(
-            'source' => 'Staff Type',
-            'target' => 'field_staff_type',
-            'unique' => FALSE,
-          ),
-          10 => array(
+          8 => array(
             'source' => 'Teaching Interests',
             'target' => 'field_teaching_interests',
             'unique' => FALSE,
           ),
+          9 => array(
+            'source' => 'College',
+            'target' => 'field_college',
+            'unique' => FALSE,
+          ),
+          10 => array(
+            'source' => 'Staff Type',
+            'target' => 'field_staff_type',
+            'unique' => FALSE,
+          ),
         ),
         'update_existing' => '2',
-        'input_format' => 'plain_text',
+        'input_format' => 'html',
         'skip_hash_check' => 0,
       ),
     ),

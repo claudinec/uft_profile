@@ -33,7 +33,11 @@ projects[admin_menu][version] = "3.0-rc4"
 
 projects[auto_nodetitle][subdir] = "contrib"
 projects[auto_nodetitle][type] = "module"
-projects[auto_nodetitle][version = 1.0
+projects[auto_nodetitle][version = "1.0"
+
+projects[autocomplete_widgets][subdir] = "contrib"
+projects[autocomplete_widgets][type] = "module"
+projects[autocomplete_widgets][version = "1.0-beta2"
 
 ; projects[backup_migrate][subdir] = "contrib"
 ; projects[backup_migrate][type] = "module"
@@ -84,11 +88,16 @@ projects[disable_messages][version] = "1.1"
 
 projects[ds][subdir] = "contrib"
 projects[ds][type] = "module"
-projects[ds][version] = "2.0"
+projects[ds][version] = "2.2"
 
 projects[entity][subdir] = "contrib"
 projects[entity][type] = "module"
 projects[entity][version] = "1.0"
+
+projects[entityreference][subdir] = "contrib"
+projects[entityreference][type] = "module"
+projects[entityreference][version] = "1.0"
+projects[entityreference][patch][] = "http://drupal.org/files/entityreference-1459540-47-workaround-fatal-error.patch"
 
 projects[extlink][subdir] = "contrib"
 projects[extlink][type] = "module"
@@ -109,6 +118,10 @@ projects[feeds_tamper][version] = "1.0-beta4"
 projects[field_collection][subdir] = "contrib"
 projects[field_collection][type] = "module"
 projects[field_collection][version] = "1.0-beta5"
+
+projects[field_collection_feeds][subdir] = "contrib"
+projects[field_collection_feeds][type] = "module"
+projects[field_collection_feeds][version] = "1.0-alpha2"
 
 projects[filefield_sources][subdir] = "contrib"
 projects[filefield_sources][type] = "module"
@@ -194,10 +207,6 @@ projects[og][subdir] = "contrib"
 projects[og][type] = "module"
 projects[og][version] = "2.0-rc1"
 
-projects[omega_tools][subdir] = "contrib"
-projects[omega_tools][type] = "module"
-projects[omega_tools][version] = "3.0-rc4"
-
 projects[pathauto][subdir] = "contrib"
 projects[pathauto][type] = "module"
 projects[pathauto][version] = "1.2"
@@ -234,6 +243,10 @@ projects[stringoverrides][subdir] = "contrib"
 projects[stringoverrides][type] = "module"
 projects[stringoverrides][version] = "1.8"
 
+projects[strongarm][subdir] = "contrib"
+projects[strongarm][type] = "module"
+projects[strongarm][version] = "2.0"
+
 projects[switchtheme][subdir] = "contrib"
 projects[switchtheme][type] = "module"
 projects[switchtheme][version] = "1.0"
@@ -241,6 +254,10 @@ projects[switchtheme][version] = "1.0"
 projects[themekey][subdir] = "contrib"
 projects[themekey][type] = "module"
 projects[themekey][version] = "2.3"
+
+projects[timefield][subdir] = "contrib"
+projects[timefield][type] = "module"
+projects[timefield][version] = "1.0-alpha2"
 
 projects[token][subdir] = "contrib"
 projects[token][type] = "module"
@@ -276,6 +293,7 @@ projects[webform][version] = "3.18"
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][type] = "module"
 projects[wysiwyg][version] = "2.2"
+projects[wysiwyg][patch][] = "http://drupal.org/files/wysiwyg-support_v4_ckeditor-1853550-73.patch"
 
 projects[xmlsitemap][subdir] = "contrib"
 projects[xmlsitemap][type] = "module"
