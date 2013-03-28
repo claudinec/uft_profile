@@ -84,6 +84,16 @@ function uft_staff_feeds_importer_default() {
             'target' => 'field_teaching_interests',
             'unique' => FALSE,
           ),
+          9 => array(
+            'source' => 'College',
+            'target' => 'field_college',
+            'unique' => FALSE,
+          ),
+          10 => array(
+            'source' => 'Staff Type',
+            'target' => 'field_staff_type',
+            'unique' => FALSE,
+          ),
         ),
         'update_existing' => '2',
         'input_format' => 'html',

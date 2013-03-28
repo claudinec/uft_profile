@@ -95,20 +95,17 @@ function uft_units_field_default_fields() {
       'locked' => '0',
       'module' => 'entityreference',
       'settings' => array(
-        'handler' => 'base',
+        'handler' => 'views',
         'handler_settings' => array(
           'behaviors' => array(
             'views-select-list' => array(
               'status' => 0,
             ),
           ),
-          'sort' => array(
-            'direction' => 'ASC',
-            'property' => 'title',
-            'type' => 'property',
-          ),
-          'target_bundles' => array(
-            'staff_profile' => 'staff_profile',
+          'view' => array(
+            'args' => array(),
+            'display_name' => 'entityreference_1',
+            'view_name' => 'staff',
           ),
         ),
         'target_type' => 'node',
@@ -135,18 +132,14 @@ function uft_units_field_default_fields() {
       'entity_type' => 'field_collection_item',
       'field_name' => 'field_lecturer',
       'label' => 'Lecturer',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'options',
-        'settings' => array(
-          'match_operator' => 'STARTS_WITH',
-          'path' => '',
-          'size' => '60',
-        ),
+        'settings' => array(),
         'type' => 'options_select',
         'weight' => '5',
       ),
@@ -174,6 +167,7 @@ function uft_units_field_default_fields() {
           'CTM' => 'Centre for Theology and Ministry',
           'JTC' => 'Jesuit Theological College',
           'OWL' => 'Old Warden\'s Lodge, Trinity College',
+          'WHT' => 'Whitley College',
           'NN' => 'New Norcia',
         ),
         'allowed_values_function' => '',
@@ -540,43 +534,37 @@ function uft_units_field_default_fields() {
   $fields['node-unit-field_courses'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '6',
+      'cardinality' => '10',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_courses',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
+      'foreign keys' => array(),
       'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
+        'value' => array(
+          0 => 'value',
         ),
       ),
       'locked' => '0',
-      'module' => 'entityreference',
+      'module' => 'list',
       'settings' => array(
-        'handler' => 'views',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'view' => array(
-            'args' => array(),
-            'display_name' => 'entityreference_1',
-            'view_name' => 'courses',
-          ),
+        'allowed_values' => array(
+          'Diploma in Theology' => 'Diploma in Theology',
+          'Advanced Diploma in Theology' => 'Advanced Diploma in Theology',
+          'Bachelor of Ministry' => 'Bachelor of Ministry',
+          'Bachelor of Theology' => 'Bachelor of Theology',
+          'Bachelor of Theology (Honours)' => 'Bachelor of Theology (Honours)',
+          'Graduate Certificate in Theology' => 'Graduate Certificate in Theology',
+          'Graduate Certificate in Educational Chaplaincy' => 'Graduate Certificate in Educational Chaplaincy',
+          'Graduate Diploma in Theology' => 'Graduate Diploma in Theology',
+          'Graduate Diploma in Pastoral Care' => 'Graduate Diploma in Pastoral Care',
+          'Master of Arts (Theology)' => 'Master of Arts (Theology)',
+          'Master of Divinity' => 'Master of Divinity',
+          'Master of Theological Studies' => 'Master of Theological Studies',
         ),
-        'target_type' => 'node',
+        'allowed_values_function' => '',
       ),
       'translatable' => '0',
-      'type' => 'entityreference',
+      'type' => 'list_text',
     ),
     'field_instance' => array(
       'bundle' => 'unit',
@@ -586,12 +574,10 @@ function uft_units_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => '18',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => 21,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -611,8 +597,8 @@ function uft_units_field_default_fields() {
         'active' => 1,
         'module' => 'options',
         'settings' => array(),
-        'type' => 'options_select',
-        'weight' => '6',
+        'type' => 'options_buttons',
+        'weight' => '12',
       ),
     ),
   );
@@ -625,40 +611,25 @@ function uft_units_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_department',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
+      'foreign keys' => array(),
       'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
+        'value' => array(
+          0 => 'value',
         ),
       ),
       'locked' => '0',
-      'module' => 'entityreference',
+      'module' => 'list',
       'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'type' => 'none',
-          ),
-          'target_bundles' => array(
-            'departments' => 'departments',
-          ),
+        'allowed_values' => array(
+          'Biblical Studies' => 'Biblical Studies',
+          'Christian Thought and History' => 'Christian Thought and History',
+          'Moral and Practical Theology' => 'Moral and Practical Theology',
+          'Philosophy' => 'Philosophy',
         ),
-        'target_type' => 'taxonomy_term',
+        'allowed_values_function' => '',
       ),
       'translatable' => '0',
-      'type' => 'entityreference',
+      'type' => 'list_text',
     ),
     'field_instance' => array(
       'bundle' => 'unit',
@@ -668,12 +639,10 @@ function uft_units_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => 21,
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => 22,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -687,11 +656,6 @@ function uft_units_field_default_fields() {
       'label' => 'Department',
       'required' => 1,
       'settings' => array(
-        'behaviors' => array(
-          'taxonomy-index' => array(
-            'status' => TRUE,
-          ),
-        ),
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -699,7 +663,7 @@ function uft_units_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '12',
+        'weight' => '11',
       ),
     ),
   );
@@ -858,7 +822,7 @@ function uft_units_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '8',
+        'weight' => '7',
       ),
     ),
   );
@@ -1453,7 +1417,7 @@ function uft_units_field_default_fields() {
         'module' => 'field_collection',
         'settings' => array(),
         'type' => 'field_collection_embed',
-        'weight' => '10',
+        'weight' => '9',
       ),
     ),
   );
@@ -1651,7 +1615,7 @@ function uft_units_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '7',
+        'weight' => '6',
       ),
     ),
   );
@@ -1716,7 +1680,7 @@ function uft_units_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '11',
+        'weight' => '10',
       ),
     ),
   );
@@ -1784,7 +1748,7 @@ function uft_units_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '9',
+        'weight' => '8',
       ),
     ),
   );

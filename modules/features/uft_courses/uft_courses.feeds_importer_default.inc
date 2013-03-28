@@ -40,56 +40,51 @@ function uft_courses_feeds_importer_default() {
         'authorize' => 1,
         'mappings' => array(
           0 => array(
-            'source' => 'Nid',
-            'target' => 'nid',
+            'source' => 'Title',
+            'target' => 'title',
             'unique' => 1,
           ),
           1 => array(
-            'source' => 'Title',
-            'target' => 'title',
-            'unique' => FALSE,
-          ),
-          2 => array(
             'source' => 'Path',
             'target' => 'path_alias',
             'pathauto_override' => 1,
           ),
-          3 => array(
+          2 => array(
             'source' => 'Course Description',
             'target' => 'field_course_description',
             'unique' => FALSE,
           ),
-          4 => array(
+          3 => array(
             'source' => 'Course Pathways',
             'target' => 'field_course_pathways',
             'unique' => FALSE,
           ),
-          5 => array(
+          4 => array(
             'source' => 'Course Structure',
             'target' => 'field_course_structure',
             'unique' => FALSE,
           ),
-          6 => array(
+          5 => array(
             'source' => 'Course Type',
             'target' => 'field_course_type',
             'unique' => FALSE,
           ),
-          7 => array(
+          6 => array(
             'source' => 'Course Volume',
             'target' => 'field_course_volume',
             'unique' => FALSE,
           ),
-          8 => array(
+          7 => array(
             'source' => 'Entry Requirements',
             'target' => 'field_entry_requirements',
             'unique' => FALSE,
           ),
-          9 => array(
+          8 => array(
             'source' => 'Graduate Outcomes',
             'target' => 'field_graduate_outcomes',
             'unique' => FALSE,
           ),
-          10 => array(
+          9 => array(
             'source' => 'Modes of Study',
             'target' => 'field_modes_of_study',
             'unique' => FALSE,

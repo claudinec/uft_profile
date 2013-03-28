@@ -35,7 +35,7 @@ function uft_units_user_default_permissions() {
   $permissions['edit any unit content'] = array(
     'name' => 'edit any unit content',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'node',
   );
@@ -44,45 +44,9 @@ function uft_units_user_default_permissions() {
   $permissions['edit own unit content'] = array(
     'name' => 'edit own unit content',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: publish revisions of any unit content.
-  $permissions['publish revisions of any unit content'] = array(
-    'name' => 'publish revisions of any unit content',
-    'roles' => array(
-      0 => 'Administrator',
-    ),
-    'module' => 'revisioning',
-  );
-
-  // Exported permission: publish revisions of own unit content.
-  $permissions['publish revisions of own unit content'] = array(
-    'name' => 'publish revisions of own unit content',
-    'roles' => array(
-      0 => 'Administrator',
-    ),
-    'module' => 'revisioning',
-  );
-
-  // Exported permission: view revisions of any unit content.
-  $permissions['view revisions of any unit content'] = array(
-    'name' => 'view revisions of any unit content',
-    'roles' => array(
-      0 => 'Administrator',
-    ),
-    'module' => 'revisioning',
-  );
-
-  // Exported permission: view revisions of own unit content.
-  $permissions['view revisions of own unit content'] = array(
-    'name' => 'view revisions of own unit content',
-    'roles' => array(
-      0 => 'Administrator',
-    ),
-    'module' => 'revisioning',
   );
 
   return $permissions;
