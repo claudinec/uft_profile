@@ -1,0 +1,14 @@
+name = UFT Blocks
+description = Blocks and Contexts
+core = 7.x
+package = UFT
+dependencies[] = boxes
+dependencies[] = context
+dependencies[] = ctools
+dependencies[] = search
+features[box][] = indigenous_statement_box
+features[context][] = front_blocks
+features[context][] = sitewide_blocks
+features[ctools][] = boxes:box:1
+features[ctools][] = context:context:3
+features[features_api][] = api:1
