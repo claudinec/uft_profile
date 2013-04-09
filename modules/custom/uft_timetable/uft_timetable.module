@@ -22,28 +22,29 @@ function uft_timetable_menu() {
 }
 
 /**
- * Implements hook_page_alter().
- */
-// function uft_timetable_page_alter(&$page) {
-//   return drupal_render_page('uft_timetable_display');
-// }
-
-/**
  * Function to query and display timetable data.
  */
 function uft_timetable_display() {
-  // $page['content'][] = 'Hello!';
-  print 'Hello';
+  $today = getdate();
+  $current_year = $today['year'];
 
-// Display options:
-// - Year
-// - Semester
-// - Courses
+  // TODO Display options:
+  // - Year
+  // - Semester
+  // - Courses
 
-// Query the database.
+  // TODO Build the database query.
+  $query = 'select entity_id from field_data_field_timetable_year
+    where field_timetable_year_value = :year';
 
-// Results of query.
+  // TODO Results of query.
+  $results = db_query($query,
+    array(':year' => $current_year)
+  );
+  foreach ($results as $record) {
+    print $record->entity_id . "\n";
+  }
 
-// Format the output.
+  // TODO Format the output.
 
 }
