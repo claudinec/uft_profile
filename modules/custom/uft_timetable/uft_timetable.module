@@ -5,7 +5,35 @@
  * descriptions.
  */
 
-// Register the path for the timetable view.
+/**
+ * Implements hook_menu().
+ */
+function uft_timetable_menu() {
+  // Register the path for the timetable view.
+  $items['timetable']  = array(
+    'title'            => 'Timetables',
+    'type'             => MENU_NORMAL_ITEM,
+    'page callback'    => 'drupal_render_page',
+    'page arguments'   => array('uft_timetable_display'),
+    'access arguments' => array('access content'),
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_page_alter().
+ */
+// function uft_timetable_page_alter(&$page) {
+//   return drupal_render_page('uft_timetable_display');
+// }
+
+/**
+ * Function to query and display timetable data.
+ */
+function uft_timetable_display() {
+  // $page['content'][] = 'Hello!';
+  print 'Hello';
 
 // Display options:
 // - Year
@@ -17,3 +45,5 @@
 // Results of query.
 
 // Format the output.
+
+}
