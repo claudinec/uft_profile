@@ -1,0 +1,19 @@
+<?php
+/**
+ * @file
+ * Emulate the display of the printed class timetable, with links to unit
+ * descriptions.
+ */
+
+// Register the path for the timetable view.
+
+// Display options:
+// - Year
+// - Semester
+// - Courses
+
+// Query the database.
+
+// Results of query.
+
+// Format the output.
