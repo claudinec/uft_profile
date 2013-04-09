@@ -1,0 +1,16 @@
+name = UFT Admin
+description = UFT administration features
+core = 7.x
+package = UFT
+version = 7.x-1.0
+project = uft_admin
+dependencies[] = admin_menu
+dependencies[] = backup_migrate
+dependencies[] = context_ui
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = ds_ui
+dependencies[] = field_ui
+dependencies[] = update
+dependencies[] = views_ui
+features[features_api][] = api:1
