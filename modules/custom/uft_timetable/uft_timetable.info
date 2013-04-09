@@ -3,3 +3,5 @@ description = UFT timetable display module
 core = 7.x
 package = UFT
 version = 7.x-0.1
+
+dependencies[] = uft_units
