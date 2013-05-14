@@ -35,7 +35,7 @@ function uft_courses_user_default_permissions() {
   $permissions['edit any course content'] = array(
     'name' => 'edit any course content',
     'roles' => array(
-      'Administrator' => 'Administrator',
+      0 => 'Administrator',
     ),
     'module' => 'node',
   );
@@ -44,7 +44,7 @@ function uft_courses_user_default_permissions() {
   $permissions['edit own course content'] = array(
     'name' => 'edit own course content',
     'roles' => array(
-      'Administrator' => 'Administrator',
+      0 => 'Administrator',
     ),
     'module' => 'node',
   );
@@ -53,7 +53,7 @@ function uft_courses_user_default_permissions() {
   $permissions['publish revisions of any course content'] = array(
     'name' => 'publish revisions of any course content',
     'roles' => array(
-      'Administrator' => 'Administrator',
+      0 => 'Administrator',
     ),
     'module' => 'revisioning',
   );
@@ -62,7 +62,7 @@ function uft_courses_user_default_permissions() {
   $permissions['publish revisions of own course content'] = array(
     'name' => 'publish revisions of own course content',
     'roles' => array(
-      'Administrator' => 'Administrator',
+      0 => 'Administrator',
     ),
     'module' => 'revisioning',
   );
@@ -71,7 +71,7 @@ function uft_courses_user_default_permissions() {
   $permissions['view revisions of any course content'] = array(
     'name' => 'view revisions of any course content',
     'roles' => array(
-      'Administrator' => 'Administrator',
+      0 => 'Administrator',
     ),
     'module' => 'revisioning',
   );
@@ -80,7 +80,7 @@ function uft_courses_user_default_permissions() {
   $permissions['view revisions of own course content'] = array(
     'name' => 'view revisions of own course content',
     'roles' => array(
-      'Administrator' => 'Administrator',
+      0 => 'Administrator',
     ),
     'module' => 'revisioning',
   );

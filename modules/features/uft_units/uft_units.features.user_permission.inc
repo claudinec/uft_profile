@@ -35,7 +35,7 @@ function uft_units_user_default_permissions() {
   $permissions['edit any unit content'] = array(
     'name' => 'edit any unit content',
     'roles' => array(
-      'Administrator' => 'Administrator',
+      0 => 'Administrator',
     ),
     'module' => 'node',
   );
@@ -44,7 +44,7 @@ function uft_units_user_default_permissions() {
   $permissions['edit own unit content'] = array(
     'name' => 'edit own unit content',
     'roles' => array(
-      'Administrator' => 'Administrator',
+      0 => 'Administrator',
     ),
     'module' => 'node',
   );
