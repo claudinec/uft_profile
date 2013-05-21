@@ -23,6 +23,7 @@ function uft_news_archive_feeds_importer_default() {
         'auto_detect_feeds' => FALSE,
         'use_pubsubhubbub' => FALSE,
         'designated_hub' => '',
+        'request_timeout' => NULL,
       ),
     ),
     'parser' => array(
@@ -32,7 +33,6 @@ function uft_news_archive_feeds_importer_default() {
     'processor' => array(
       'plugin_key' => 'FeedsNodeProcessor',
       'config' => array(
-        'content_type' => 'article',
         'expire' => '-1',
         'author' => '1',
         'authorize' => 1,
@@ -56,6 +56,7 @@ function uft_news_archive_feeds_importer_default() {
         'update_existing' => '2',
         'input_format' => 'html',
         'skip_hash_check' => 0,
+        'bundle' => 'article',
       ),
     ),
     'content_type' => '',
