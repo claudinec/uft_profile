@@ -9,9 +9,8 @@ dependencies[] = coder
 dependencies[] = coder_review
 dependencies[] = ctools
 dependencies[] = devel
+dependencies[] = diff
 dependencies[] = features
-dependencies[] = fpa
 dependencies[] = module_filter
-dependencies[] = strongarm
 dependencies[] = token
 

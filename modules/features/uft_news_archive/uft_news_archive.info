@@ -1,0 +1,17 @@
+name = UFT News Archive
+core = 7.x
+package = UFT
+php = 5.2.4
+version = 7.x-1.0
+project = uft_news_archive
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = feeds
+dependencies[] = strongarm
+dependencies[] = text
+features[ctools][] = feeds:feeds_importer_default:1
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:1
+features[feeds_importer][] = news_archive
+features[field][] = node-article-body
+features[node][] = article

@@ -1,0 +1,10 @@
+<?php
+
+include_once('uft_units.features.inc');
+
+/**
+ * Implements hook_uninstall().
+ */
+function uft_units_uninstall() {
+}
+

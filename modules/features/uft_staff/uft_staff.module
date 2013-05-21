@@ -1,0 +1,14 @@
+<?php
+/**
+ * @file
+ * Code for the UFT Staff feature.
+ */
+
+include_once 'uft_staff.features.inc';
+
+/**
+ * Implements hook_uninstall().
+ */
+function uft_staff_uninstall() {
+}
+

@@ -1,0 +1,3 @@
+[submodule "themes/custom/uft_2012"]
+	path = themes/custom/uft_2012
+	url = git@github.com:claudinec/uft_2012.git
