@@ -50,6 +50,7 @@ We undertake to review and monitor this statement of commitment and its implemen
 _As agreed by Senatus, 29 November 2004_',
       'format' => 'html',
     ),
+    'additional_classes' => '',
   );
   $export['indigenous_statement_box'] = $box;
 
