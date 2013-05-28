@@ -53,5 +53,20 @@ _As agreed by Senatus, 29 November 2004_',
   );
   $export['indigenous_statement_box'] = $box;
 
+  $box = new stdClass();
+  $box->disabled = FALSE; /* Edit this to true to make a default box disabled initially */
+  $box->api_version = 1;
+  $box->delta = 'welcome';
+  $box->plugin_key = 'simple';
+  $box->title = '';
+  $box->description = 'Welcome';
+  $box->options = array(
+    'body' => array(
+      'value' => '<p style="margin: 0px 0px 1em; padding: 0px 10px; color: rgb(45, 45, 45); font-family: helvetica, sans-serif; font-size: 14px; line-height: normal;">The United Faculty of Theology (UFT) is an ecumenical partnership of three theological colleges in Parkville, Melbourne, within&nbsp;<a class="ext" href="http://mcd.edu.au/" style="border-bottom-width: 1px; border-bottom-style: dotted; color: rgb(107, 147, 156);" target="_blank">MCD University of Divinity</a>&nbsp;(CRICOS Provider 01037A), Australia. Some students are in formation for ministry at Jesuit Theological College, the Uniting Church Theological College, or Trinity College Theological School (Anglican). Others are undertaking professional development, writing a research thesis, pursuing their first tertiary degree, or fulfilling a passion for theological study.</p><p style="margin: 0px 0px 1em; padding: 0px 10px; color: rgb(45, 45, 45); font-family: helvetica, sans-serif; font-size: 14px; line-height: normal;">We offer courses and units in face-to-face lectures, by distance through&nbsp;<a class="ext" href="http://online.mcd.edu.au/" style="border-bottom-width: 1px; border-bottom-style: dotted; color: rgb(107, 147, 156);" target="_blank">Theology Online</a>, in intensive, weekend and evening classes. We invite you to join us.</p>',
+      'format' => 'html',
+    ),
+  );
+  $export['welcome'] = $box;
+
   return $export;
 }
