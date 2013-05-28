@@ -60,22 +60,30 @@ function uft_text_filter_default_formats() {
           'filter_html_nofollow' => 0,
         ),
       ),
-      'filter_markdown' => array(
-        'weight' => '-49',
-        'status' => '1',
-        'settings' => array(),
-      ),
       'filter_url' => array(
-        'weight' => '-48',
+        'weight' => '-49',
         'status' => '1',
         'settings' => array(
           'filter_url_length' => '72',
         ),
       ),
       'filter_autop' => array(
+        'weight' => '-48',
+        'status' => '1',
+        'settings' => array(),
+      ),
+      'filter_markdown' => array(
         'weight' => '-47',
         'status' => '1',
         'settings' => array(),
+      ),
+      'pathologic' => array(
+        'weight' => '-44',
+        'status' => '1',
+        'settings' => array(
+          'local_paths' => '',
+          'protocol_style' => 'full',
+        ),
       ),
     ),
   );
