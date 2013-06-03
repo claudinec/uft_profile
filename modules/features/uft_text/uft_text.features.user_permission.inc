@@ -14,7 +14,7 @@ function uft_text_user_default_permissions() {
   $permissions['administer filters'] = array(
     'name' => 'administer filters',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'filter',
   );
@@ -23,7 +23,7 @@ function uft_text_user_default_permissions() {
   $permissions['use text format full_html'] = array(
     'name' => 'use text format full_html',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'filter',
   );
@@ -32,8 +32,8 @@ function uft_text_user_default_permissions() {
   $permissions['use text format html'] = array(
     'name' => 'use text format html',
     'roles' => array(
-      0 => 'Administrator',
-      1 => 'Staff',
+      'Administrator' => 'Administrator',
+      'Staff' => 'Staff',
     ),
     'module' => 'filter',
   );

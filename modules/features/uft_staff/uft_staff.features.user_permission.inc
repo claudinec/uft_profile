@@ -21,7 +21,7 @@ function uft_staff_user_default_permissions() {
   $permissions['create staff_profile content'] = array(
     'name' => 'create staff_profile content',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'node',
   );
@@ -44,8 +44,8 @@ function uft_staff_user_default_permissions() {
   $permissions['edit any staff_profile content'] = array(
     'name' => 'edit any staff_profile content',
     'roles' => array(
-      0 => 'Administrator',
-      1 => 'Staff',
+      'Administrator' => 'Administrator',
+      'Staff' => 'Staff',
     ),
     'module' => 'node',
   );
@@ -54,8 +54,8 @@ function uft_staff_user_default_permissions() {
   $permissions['edit own staff_profile content'] = array(
     'name' => 'edit own staff_profile content',
     'roles' => array(
-      0 => 'Administrator',
-      1 => 'Staff',
+      'Administrator' => 'Administrator',
+      'Staff' => 'Staff',
     ),
     'module' => 'node',
   );
@@ -71,7 +71,7 @@ function uft_staff_user_default_permissions() {
   $permissions['publish revisions of any staff_profile content'] = array(
     'name' => 'publish revisions of any staff_profile content',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'revisioning',
   );
@@ -80,7 +80,7 @@ function uft_staff_user_default_permissions() {
   $permissions['publish revisions of own staff_profile content'] = array(
     'name' => 'publish revisions of own staff_profile content',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'revisioning',
   );
@@ -103,7 +103,7 @@ function uft_staff_user_default_permissions() {
   $permissions['view revisions of any staff_profile content'] = array(
     'name' => 'view revisions of any staff_profile content',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'revisioning',
   );
@@ -112,7 +112,7 @@ function uft_staff_user_default_permissions() {
   $permissions['view revisions of own staff_profile content'] = array(
     'name' => 'view revisions of own staff_profile content',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'revisioning',
   );
