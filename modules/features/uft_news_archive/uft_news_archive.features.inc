@@ -19,6 +19,13 @@ function uft_news_archive_ctools_plugin_api() {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function uft_news_archive_views_api() {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function uft_news_archive_node_info() {
