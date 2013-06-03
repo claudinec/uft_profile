@@ -14,7 +14,7 @@ function uft_handbook_user_default_permissions() {
   $permissions['access printer-friendly version'] = array(
     'name' => 'access printer-friendly version',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'book',
   );
@@ -23,7 +23,7 @@ function uft_handbook_user_default_permissions() {
   $permissions['add content to books'] = array(
     'name' => 'add content to books',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'book',
   );
@@ -32,7 +32,7 @@ function uft_handbook_user_default_permissions() {
   $permissions['administer book outlines'] = array(
     'name' => 'administer book outlines',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'book',
   );
@@ -41,8 +41,8 @@ function uft_handbook_user_default_permissions() {
   $permissions['create book content'] = array(
     'name' => 'create book content',
     'roles' => array(
-      0 => 'Administrator',
-      1 => 'Staff',
+      'Administrator' => 'Administrator',
+      'Staff' => 'Staff',
     ),
     'module' => 'node',
   );
@@ -51,7 +51,7 @@ function uft_handbook_user_default_permissions() {
   $permissions['create new books'] = array(
     'name' => 'create new books',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'book',
   );
@@ -60,7 +60,7 @@ function uft_handbook_user_default_permissions() {
   $permissions['delete any book content'] = array(
     'name' => 'delete any book content',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'node',
   );
@@ -69,7 +69,7 @@ function uft_handbook_user_default_permissions() {
   $permissions['delete own book content'] = array(
     'name' => 'delete own book content',
     'roles' => array(
-      0 => 'Administrator',
+      'Administrator' => 'Administrator',
     ),
     'module' => 'node',
   );
@@ -78,8 +78,8 @@ function uft_handbook_user_default_permissions() {
   $permissions['edit any book content'] = array(
     'name' => 'edit any book content',
     'roles' => array(
-      0 => 'Administrator',
-      1 => 'Staff',
+      'Administrator' => 'Administrator',
+      'Staff' => 'Staff',
     ),
     'module' => 'node',
   );
@@ -88,8 +88,8 @@ function uft_handbook_user_default_permissions() {
   $permissions['edit own book content'] = array(
     'name' => 'edit own book content',
     'roles' => array(
-      0 => 'Administrator',
-      1 => 'Staff',
+      'Administrator' => 'Administrator',
+      'Staff' => 'Staff',
     ),
     'module' => 'node',
   );
