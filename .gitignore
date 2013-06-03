@@ -17,7 +17,6 @@ sites/all/themes/README.txt
 .htaccess
 
 libraries
-modules/contrib
 
 *.~
 *.swp

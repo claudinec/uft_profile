@@ -1,0 +1,25 @@
+diff --git a/entityreference.install b/entityreference.install
+index 4e248ef..630dd32 100644
+--- a/entityreference.install
++++ b/entityreference.install
+@@ -41,8 +41,11 @@ function entityreference_field_schema($field) {
+     }
+ 
+     // Invoke the behaviors to allow them to change the schema.
+-    foreach (entityreference_get_behavior_handlers($field) as $handler) {
+-      $handler->schema_alter($schema, $field);
++    // (works around a drupal core bug: see https://drupal.org/node/1459540)
++    if (function_exists('entityreference_get_behavior_handlers')) {
++      foreach (entityreference_get_behavior_handlers($field) as $handler) {
++        $handler->schema_alter($schema, $field);
++      }
+     }
+ 
+     return $schema;
+@@ -161,4 +164,4 @@ function entityreference_update_7002() {
+       'not null' => TRUE,
+     ));
+   }
+-}
+\ No newline at end of file
++}
