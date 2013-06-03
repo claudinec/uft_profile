@@ -1745,3 +1745,12 @@ tr.error {}
   min-height: 260px;
   width: auto;
 }
+
+/* =============================================================================
+ *   News Archive view
+ * ========================================================================== */
+
+.view-news-archive .view-content .item-list .views-row {
+  list-style-type: none;
+}
+
