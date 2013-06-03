@@ -13,13 +13,13 @@ function uft_users_user_default_roles() {
   // Exported role: Administrator.
   $roles['Administrator'] = array(
     'name' => 'Administrator',
-    'weight' => '2',
+    'weight' => 2,
   );
 
   // Exported role: Staff.
   $roles['Staff'] = array(
     'name' => 'Staff',
-    'weight' => '3',
+    'weight' => 3,
   );
 
   return $roles;
