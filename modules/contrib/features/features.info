@@ -5,8 +5,8 @@ package = "Features"
 files[] = tests/features.test
 
 ; Information added by drupal.org packaging script on 2013-05-21
-version = "7.x-2.0-rc1"
+version = "7.x-2.0-rc1+0-dev"
 core = "7.x"
 project = "features"
-datestamp = "1369094412"
+datestamp = "1369097671"
 
